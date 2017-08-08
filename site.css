@@ -1,12 +1,17 @@
 body{font-family: 'PT Sans', sans-serif;background-color:#404041;color:#f9f9ff}
+td{padding:4px;}
 a{color:#009ddc;font-weight:bold;}
-.table-striped{2px solid #59595b;}
-.table{width:100%;}
-thead{background-color: #59595b;}
+table{border-spacing:0px;}
+.table-striped{border:2px solid #59595b;}
+.table-work{float:left;width:86%;border-radius:3px;}
+.table-key{float:right;width:12%;border-radius:3px;}
+.head{background-color:#59595b!important;}
 tr:nth-of-type(2n+1) {
-    background-color: #404041;
+background-color:#404041;
 }
 
-tr:nth-of-type(2n) {
-    background-color: #4d4d4e;
+tr:nth-of-type(2n) {background-color:#4d4d4e;
 }
+.green{background-color:#67c58f;color:#404041;}
+.yellow{background-color:yellow;color:#404041;}
+.red{background-color:rgb(255, 129, 129);color:#f9f9ff}

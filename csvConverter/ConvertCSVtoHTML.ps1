@@ -1,7 +1,15 @@
+# name of the html file
+$htmlhtmFileName = "..\index-test.htm"
+
+# header info
 $head = "<title>hub2 Roadmap</title>
 <link rel=`"stylesheet`" href=`"site.css`"/>
 <link href=`"https://fonts.googleapis.com/css?family=PT+Sans`" rel=`"stylesheet`">"
+
+# title, will be injected before the filter file and shown at the top.
 $title = "<h1>hub2 Roadmap</h1>"
+
+# the html for the key tables, will be injected after the filter file and shown at the right
 $key = "<table class=`"table-key table-striped`">
 		<thead>
 			<tr class=`"head`">
@@ -63,7 +71,13 @@ $key = "<table class=`"table-key table-striped`">
 			</tr>
 		</tbody>
 	</table>"
-import-csv Filter.csv | ConvertTo-Html -head $head -PreContent $title -PostContent $key| Out-File -Encoding utf8 ..\index-test.htm
-(Get-Content ..\index-test.htm).Replace('<td>Green</td>','<td class = "green">Green</td>') | Set-Content ..\index-test.htm
-(Get-Content ..\index-test.htm).Replace('<td>Yellow</td>','<td class = "yellow">Yellow</td>') | Set-Content ..\index-test.htm
-(Get-Content ..\index-test.htm).Replace('<td>Red</td>','<td class = "red">Red</td>') | Set-Content ..\index-test.htm
+
+# import the CSV and pipe through to the Convert command, add the header then (before the contents of Filter.csv) 
+# add the title. After the contents of Filter.csv add the key tables and output using utf8 encoding (so the css 
+# works correctly
+import-csv Filter.csv | ConvertTo-Html -head $head -PreContent $title -PostContent $key| Out-File -Encoding utf8 $htmFileName
+
+# Style the Condition fields by performing three find and replace operations.
+(Get-Content $htmFileName).Replace('<td>Green</td>','<td class = "green">Green</td>') | Set-Content $htmFileName
+(Get-Content $htmFileName).Replace('<td>Yellow</td>','<td class = "yellow">Yellow</td>') | Set-Content $htmFileName
+(Get-Content $htmFileName).Replace('<td>Red</td>','<td class = "red">Red</td>') | Set-Content $htmFileName

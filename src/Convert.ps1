@@ -36,11 +36,12 @@ $key = "<table class=`"table-key table-striped`">
 			<tr>
 		</tbody>
 	</table>
+    
 	<div class=`"table-key`">&nbsp;</div>
 	<table class=`"table-key table-striped`">
 		<thead>
 			<tr class=`"head`">
-				<th>Cat.</th>
+				<th>Class</th>
 				<th>Description</th>
 			</tr>
 		</thead>

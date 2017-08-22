@@ -1,10 +1,14 @@
+# Get the date and time
+$updatedOn = Get-Date
 # header info
 $head = "<title>hub2 Roadmap</title>
 <link rel=`"stylesheet`" href=`"site.css`"/>
 <link href=`"https://fonts.googleapis.com/css?family=PT+Sans`" rel=`"stylesheet`">"
 
 # title, will be injected before the filter file and shown at the top.
-$title = "<h1>hub2 Roadmap</h1>"
+$title = "<h1>hub2 Roadmap</h1>
+<h2>WARNING: This is a living document and subject to continual change</h2>
+<h3>Last updated on: " + $updatedOn.ToUniversalTime() + "</h3>"
 
 # the html for the key tables, will be injected after the filter file and shown at the right
 $key = "<table class=`"table-key table-striped`">
@@ -69,12 +73,16 @@ $key = "<table class=`"table-key table-striped`">
 		</tbody>
 	</table>"
 
+# Make sure we're in the right place
+cd\
+cd GoTechnology\qedi-GoTechnology.github.io\src
+
 # import the CSV and pipe through to the Convert command, add the header then (before the contents of Filter.csv) 
 # add the title. After the contents of Filter.csv add the key tables and output using utf8 encoding (so the css 
 # works correctly
-import-csv $csvFileName | ConvertTo-Html -head $head -PreContent $title -PostContent $key| Out-File -Encoding utf8 .\index-test.htm
+import-csv Filter.csv | ConvertTo-Html -head $head -PreContent $title -PostContent $key| Out-File -Encoding utf8 ..\index-test.htm
 
 # Style the Condition fields by performing three find and replace operations.
-(Get-Content .\index-test.htm).Replace('<td>Green</td>','<td class = "green">Green</td>') | Set-Content .\index-test.htm
-(Get-Content .\index-test.htm).Replace('<td>Yellow</td>','<td class = "yellow">Yellow</td>') | Set-Content .\index-test.htm
-(Get-Content .\index-test.htm).Replace('<td>Red</td>','<td class = "red">Red</td>') | Set-Content .\index-test.htm
+(Get-Content ..\index-test.htm).Replace('<td>Green</td>','<td class = "green">Green</td>') | Set-Content ..\index-test.htm
+(Get-Content ..\index-test.htm).Replace('<td>Yellow</td>','<td class = "yellow">Yellow</td>') | Set-Content ..\index-test.htm
+(Get-Content ..\index-test.htm).Replace('<td>Red</td>','<td class = "red">Red</td>') | Set-Content ..\index-test.htm

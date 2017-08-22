@@ -1,4 +1,5 @@
-cd C:\GoTechnology\qedi-GoTechnology.github.io
+cd \
+cd GoTechnology\qedi-GoTechnology.github.io
 Write-Host "Pulling latest branch"
 &git pull
 cd src

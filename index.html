@@ -1,519 +1,79 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>hub2 Roadmap</title>
-	<link rel="stylesheet" href="site.css"/>
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
-</head>
-<body>
-<h1>hub2 Roadmap: Draft. Not to be used or shared. Contains placeholder text only.</h1>
+<title>hub2 Roadmap</title>
+<link rel="stylesheet" href="site.css"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+</head><body>
+<h1>hub2<sup>&trade;</sup> Roadmap</h1>
 <div>
-	Current version: 0.8 <br/>&nbsp;<br />
-	<svg height="50" width="86%">
-		<defs>
-    			<linearGradient id="gradProg" x1="0%" y1="0%" x2="100%" y2="0%">
-      				<stop offset="0%"
-      					style="stop-color:rgb(0,100,0);stop-opacity:1" />
-      				<stop offset="100%"
-      					style="stop-color:rgb(0,255,0);stop-opacity:1" />
-    			</linearGradient>
-  		</defs>
-		
-  		<rect width="90%" height="50" class="progressmark" />
-		<rect width="100%" height="50" class="progressbar" />
-		<text fill="#f9f9ff" font-size="36" x="2%" y="75%">Next Version: 1.0</text>
-	</svg>
-	<br/>&nbsp;<br />
-
+    <span class="red-text left"><span class="bold">WARNING:</span> This is a living document and subject to continual change.</span>
+    <span class="right italic">Last updated 22 August 2017 14:39:58</span>
+    <br/>
 </div>
-<div>
-<table class="table-work table-striped">
-		<thead>
-			<tr class="head">
-				<th>ID</th>
-				<th>Description</th>
-				<th>Cat.</th>
-				<th>Ver.</th>
-				<th>Status</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>43950</td>
-				<td>Move Recent and Saved Searchs to Mongo/Azure Storage</td>
-				<td>A</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>&nbsp;</td>
-			</tr>
-            		<tr>
-                		<td>43211</td>
-                		<td>Migrate to 2.0</td>
-                		<td>A</td>
-                		<td>TBC</td>
-                		<td class="green">Green</td>
-                		<td>Will be resolved with .NET Core 2.0</td>
-            		</tr>
-			<tr>
-				<td>43976</td>
-				<td>Aliasing</td>
-				<td>A</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>43216</td>
-				<td>Nullabe Fields on List - Search Error</td>
-				<td>A</td>
-				<td>TBC</td>
-				<td class="red">Red</td>
-				<td>Will be resolved with .NET Core 2.0 & Case 43211</td>
-			</tr>
-			<tr>
-				<td>44478</td>
-				<td>Rename Sub System to Subsystem</td>
-				<td>A</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>44782</td>
-				<td>Inspectors to User Accounts</td>
-				<td>A</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>44786</td>
-				<td>Error Logging</td>
-				<td>A</td>
-				<td>TBC</td>
-				<td class="yellow">Yellow</td>
-				<td>Research to be conducted on best Error Logging System</td>
-			</tr>
-			<tr>
-				<td>&nbsp;</td>
-				<td>More Filtered Reports</td>
-				<td>A</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>No Estimate as extra report building an ongoing exercise</td>
-			</tr>
-			<tr>
-				<td>44798</td>
-				<td>Piping Case</td>
-				<td>A</td>
-				<td>TBC</td>
-				<td class="red">Red</td>
-				<td>No agreement on best way to implement piping</td>
-			</tr>
-            		<tr>
-                		<td>44857</td>
-                		<td>Add Additional Fields</td>
-                		<td>A</td>
-                		<td>TBC</td>
-                		<td class="red">Red</td>
-                		<td>Feedback required on fields to add based on client requirements and GoCompletions fields</td>
-            		</tr>
-			<tr>
-				<td>44055</td>
-				<td>Barcode Reading</td>
-				<td>B</td>
-				<td>TBC</td>
-				<td class="yellow">Yellow</td>
-				<td>PDF Technology for reading barcodes is no better than in GoCompletions and we've had issues in the past with barcode reading in GoCompletions"</td>
-			</tr>
-			<tr>
-				<td>42543</td>
-				<td>Threaded and Queued Imports</td>
-				<td>B</td>
-				<td>TBC</td>
-				<td class="yellow">Yellow</td>
-				<td>Research into best method for queing Imports</td>
-			</tr>
-			<tr>
-				<td>41692</td>
-				<td>The handover search name case insenstive</td>
-				<td>B</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>Will be resolved with .NET Core 2.0 & Case 43211</td>
-			</tr>
-			<tr>
-				<td>44475</td>
-				<td>qedID: Code Refactor - Remove Delete buttons</td>
-				<td>B</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>44783</td>
-				<td>Inspectors Permissions</td>
-				<td>B</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>44784</td>
-				<td>Caching</td>
-				<td>B</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>44787</td>
-				<td>Import Speed Up</td>
-				<td>B</td>
-				<td>TBC</td>
-				<td class="yellow">Yellow</td>
-				<td>Ties to Caching 44784</td>
-			</tr>
-			<tr>
-				<td>42567</td>
-				<td>Graphical Reports</td>
-				<td>B</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>No Estimate as extra report building an ongoing exercise</td>
-			</tr>
-			<tr>
-				<td>44788</td>
-				<td>Hide Buttons for Permissions</td>
-				<td>B</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>44790</td>
-				<td>Paperless Expanding to Mutli-Tag Certs</td>
-				<td>B</td>
-				<td>TBC</td>
-				<td class="yellow">Yellow</td>
-				<td>Details on which Multi-Tag Certs to do are required</td>
-			</tr>
-			<tr>
-				<td>44794</td>
-				<td>Clean Energy</td>
-				<td>B</td>
-				<td>TBC</td>
-				<td class="red">Red</td>
-				<td>Full details on Clean Energy needed</td>
-			</tr>
-			<tr>
-				<td>44795</td>
-				<td>Construction Module</td>
-				<td>B</td>
-				<td>TBC</td>
-				<td class="red">Red</td>
-				<td>Full details on Construction Module needed</td>
-			</tr>
-            <tr>
-                <td>44858</td>
-                <td>Custom Fields</td>
-                <td>C</td>
-                <td>TBC</td>
-                <td class="yellow">Yellow</td>
-                <td>Work to identify best solution for custom fields based on different technical and functional requirments</td>
-            </tr>
-			<tr>
-				<td>39698</td>
-				<td>ET to PWL</td>
-				<td>C</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>42544</td>
-				<td>Edit Identifiying Data on Imports</td>
-				<td>C</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>34551</td>
-				<td>Interface/API</td>
-				<td>C</td>
-				<td>TBC</td>
-				<td class="yellow">Yellow</td>
-				<td>Details on which APIs are required needed</td>
-			</tr>
-			<tr>
-				<td>44755</td>
-				<td>Remove Dependency on Enum in Search Builder</td>
-				<td>C</td>
-				<td>TBC</td>
-				<td class="red">Red</td>
-				<td>All solutions tried so far don't work</td>
-			</tr>
-			<tr>
-				<td>44205</td>
-				<td>Extend Data Change Logger</td>
-				<td>C</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>43958</td>
-				<td>Single Sign Out of Multiple Instances</td>
-				<td>C</td>
-				<td>TBC</td>
-				<td class="yellow">Yellow</td>
-				<td>Observed issue that could be fixed once Azure is completed</td>
-			</tr>
-			<tr>
-				<td>44221</td>
-				<td>Make current level more obvious to the user</td>
-				<td>C</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>44490</td>
-				<td>Refactor: qedID - Sych Generate Search</td>
-				<td>C</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>44789</td>
-				<td>Remove Group By For Reports</td>
-				<td>C</td>
-				<td>TBC</td>
-				<td class="red">Red</td>
-				<td>Awaiting release of .NET Core 2.0 & Case 43211</td>
-			</tr>
-			<tr>
-				<td>44791</td>
-				<td>Single Sign / Federation</td>
-				<td>C</td>
-				<td>TBC</td>
-				<td class="red">Red</td>
-				<td>Need details on Federation</td>
-			</tr>
-			<tr>
-				<td>44792</td>
-				<td>Context Sentive Help</td>
-				<td>C</td>
-				<td>TBC</td>
-				<td class="yellow">Yellow</td>
-				<td>Research into best methods of context help</td>
-			</tr>
-			<tr>
-				<td>44796</td>
-				<td>Opertation Module</td>
-				<td>C</td>
-				<td>TBC</td>
-				<td class="red">Red</td>
-				<td>Full details on Operations Module needed</td>
-			</tr>
-			<tr>
-				<td>41229</td>
-				<td>Deploy - E-mail when seed data SQL Fails</td>
-				<td>D</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>42491</td>
-				<td>Optimise attachment download</td>
-				<td>D</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>41101</td>
-				<td>Schemas - PH/SH/DMCC</td>
-				<td>D</td>
-				<td>TBC</td>
-				<td class="yellow">Yellow</td>
-				<td>Details on the Schema's needed</td>
-			</tr>
-			<tr>
-				<td>43535</td>
-				<td>Procedure Popup show invalid Procedure</td>
-				<td>D</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>43908</td>
-				<td>Adding Resource Page to qedID</td>
-				<td>D</td>
-				<td>TBC</td>
-				<td class="red">Red</td>
-				<td>Discussion on Resourcing needed</td>
-			</tr>
-			<tr>
-				<td>44172</td>
-				<td>Summary Reports - include row count for each page</td>
-				<td>D</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>Might not be possible due to new paging system in Reports</td>
-			</tr>
-            <tr>
-                <td>44859</td>
-                <td>Global Saved Searches</td>
-                <td>D</td>
-                <td>TBC</td>
-                <td class="yellow">Yellow</td>
-                <td>Requies Saved Search to be transfered to Mongo first - Case 43950</td>
-            </tr>
-			<tr>
-				<td>41099</td>
-				<td>Interaction with Cloud Hosting Services</td>
-				<td>E</td>
-				<td>TBC</td>
-				<td class="yellow">Yellow</td>
-				<td>Research into how to integrate with 3rd party storage</td>
-			</tr>
-			<tr>
-				<td>43235</td>
-				<td>Digital Certs Onscreen Max Lengths</td>
-				<td>E</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>42533</td>
-				<td>Extra Validation When Importing</td>
-				<td>E</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>44094</td>
-				<td>jQuery 3 Update</td>
-				<td>E</td>
-				<td>TBC</td>
-				<td class="yellow">Yellow</td>
-				<td>Might not have all the 3rd party tools needed to update</td>
-			</tr>
-			<tr>
-				<td>44093</td>
-				<td>AutoMapper 2.1.0 Issues</td>
-				<td>E</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>40425</td>
-				<td>Search Validation</td>
-				<td>E</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>41084</td>
-				<td>Tree View</td>
-				<td>E</td>
-				<td>TBC</td>
-				<td class="yellow">Yellow</td>
-				<td>Technical Limitations</td>
-			</tr>
-			<tr>
-				<td>36559</td>
-				<td>Drop Down instead of Popup</td>
-				<td>E</td>
-				<td>TBC</td>
-				<td class="green">Green</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td>41564</td>
-				<td>Attachment Edit Functionality</td>
-				<td>F</td>
-				<td>TBC</td>
-				<td class="red">Red</td>
-				<td>Awaiting client feedback</td>
-			</tr>
-			<tr>
-				<td>39537</td>
-				<td>Future Preservation Conflicts</td>
-				<td>F</td>
-				<td>TBC</td>
-				<td class="red">Red</td>
-				<td>Awaiting client feedback</td>
-			</tr>
-			<tr>
-				<td>41443</td>
-				<td>Change to Punch List Item Entity</td>
-				<td>F</td>
-				<td>TBC</td>
-				<td class="red">Red</td>
-				<td>Awaiting client feedback</td>
-			</tr>
-			<tr>
-				<td>41433</td>
-				<td>Searching with CSVs - Performance</td>
-				<td>F</td>
-				<td>TBC</td>
-				<td class="red">Red</td>
-				<td>Awaiting release of .NET Core 2.0 & Case 43211</td>
-			</tr>
-			<tr>
-				<td>40650</td>
-				<td>Clear recent/saved searches</td>
-				<td>F</td>
-				<td>TBC</td>
-				<td class="red">Red</td>
-				<td>Awaiting client feedback</td>
-			</tr>
-			<tr>
-				<td>44190</td>
-				<td>Buttons should be at the bottom</td>
-				<td>F</td>
-				<td>TBC</td>
-				<td class="red">Red</td>
-				<td>Awaiting client feedback</td>
-			</tr>
-			<tr>
-				<td>44799</td>
-				<td>Ex Rated</td>
-				<td>E</td>
-				<td>TBC</td>
-				<td class="red">Red</td>
-				<td>Full details on Ex Rated needed</td>
-			</tr>
-			<tr>
-				<td>44710</td>
-				<td>Multi-Tenancy</td>
-				<td>G</td>
-				<td>TBC</td>
-				<td class="red">Red</td>
-				<td>Awaiting client feedback</td>
-			</tr>
-			<tr>
-				<td>44793</td>
-				<td>Offline Mode</td>
-				<td>G</td>
-				<td>TBC</td>
-				<td class="red">Red</td>
-				<td>Awaiting client feedback</td>
-			</tr>
-		</tbody>
-	</table>
-	<table class="table-key table-striped">
+<table class = "table-work table-striped">
+<colgroup><col/><col/><col/><col/><col/><col/></colgroup>
+<tr><th>Case</th><th>Title</th><th>Milestone</th><th>Class</th><th>Condition</th><th>Condition Info</th></tr>
+<tr><td>43211</td><td>Migrate to .Net Core 2.0</td><td>1.1</td><td>A</td><td class = "green">Green</td><td></td></tr>
+<tr><td>44786</td><td>Error Logging</td><td>1.1</td><td>A</td><td class = "yellow">Yellow</td><td>Researching best Error Logging solution.</td></tr>
+<tr><td>44937</td><td>Move Saved Searches to MongoDB</td><td>1.1</td><td>A</td><td class = "green">Green</td><td></td></tr>
+<tr><td>44478</td><td>Rename Sub System to Subsystem</td><td>1.1</td><td>A</td><td class = "green">Green</td><td></td></tr>
+<tr><td>44782</td><td>Inspector User Accounts</td><td>1.1</td><td>A</td><td class = "green">Green</td><td></td></tr>
+<tr><td>44783</td><td>Inspector Permissions</td><td>1.1</td><td>A</td><td class = "green">Green</td><td></td></tr>
+<tr><td>44788</td><td>Hide Buttons for items with users don&#39;t have permissions</td><td>1.1</td><td>B</td><td class = "green">Green</td><td></td></tr>
+<tr><td>44790</td><td>Expanding Paperless ITRs/Certs</td><td>1.1</td><td>B</td><td class = "yellow">Yellow</td><td>Ongoing process to identify challenging ITRs/Certificates and develop resolutions.</td></tr>
+<tr><td>34551</td><td>Interface / API</td><td>1.1</td><td>B</td><td class = "yellow">Yellow</td><td>API specification required.</td></tr>
+<tr><td>44784</td><td>Caching</td><td>1.1</td><td>B</td><td class = "green">Green</td><td></td></tr>
+<tr><td>44787</td><td>Import Performance Enhancements</td><td>1.1</td><td>B</td><td class = "yellow">Yellow</td><td>Linked to Caching, case 44787</td></tr>
+<tr><td>44857</td><td>Add Additional Fields</td><td>1.1</td><td>C</td><td class = "red">Red</td><td>Stakeholder/user feedback required..</td></tr>
+<tr><td>44055</td><td>Barcode Reading</td><td>1.1</td><td>C</td><td class = "yellow">Yellow</td><td>PDF Barcode reading technology is still imperfect.</td></tr>
+<tr><td>44475</td><td>Code Refactor: Remove Delete buttons from Instance and User pages</td><td>1.1</td><td>C</td><td class = "green">Green</td><td></td></tr>
+<tr><td>44490</td><td>Refactor: qedID - Synchronise generic search </td><td>1.1</td><td>C</td><td class = "green">Green</td><td></td></tr>
+<tr><td>42543</td><td>Threaded and Queued Imports</td><td>1.2</td><td>B</td><td class = "yellow">Yellow</td><td>Research into queing strategy required.</td></tr>
+<tr><td>44858</td><td>Custom Fields</td><td>1.2</td><td>C</td><td class = "yellow">Yellow</td><td>Work to identify best solution for custom fields based on different technical and functional requirments.</td></tr>
+<tr><td>44791</td><td>qedID : Single Sign On / Federation</td><td>Backlog</td><td>C</td><td class = "red">Red</td><td>Research required.</td></tr>
+<tr><td>44792</td><td>Context Sensitive Help</td><td>Backlog</td><td>C</td><td class = "yellow">Yellow</td><td>Research required.</td></tr>
+<tr><td>44795</td><td>Construction Module</td><td>Backlog</td><td>C</td><td class = "red">Red</td><td>Requirements not defined.</td></tr>
+<tr><td>44794</td><td>Clean Energy</td><td>Backlog</td><td>C</td><td class = "red">Red</td><td>Requirements in discussion.</td></tr>
+<tr><td>44796</td><td>Operations Module</td><td>Backlog</td><td>C</td><td class = "red">Red</td><td>Requirements not defined.</td></tr>
+<tr><td>44798</td><td>Piping Case</td><td>Backlog</td><td>C</td><td class = "red">Red</td><td>No consensus from stakeholders on implementation strategy.</td></tr>
+<tr><td>44949</td><td>Direct Downloads from Blob Storage</td><td>Backlog</td><td>D</td><td class = "green">Green</td><td></td></tr>
+<tr><td>42544</td><td>New Columns (For changing Names)</td><td>Backlog</td><td>D</td><td class = "green">Green</td><td></td></tr>
+<tr><td>43535</td><td>Procedure Popup shows invalid Procedure</td><td>Backlog</td><td>D</td><td class = "green">Green</td><td></td></tr>
+<tr><td>43976</td><td>Aliasing </td><td>Backlog</td><td>D</td><td class = "green">Green</td><td></td></tr>
+<tr><td>44168</td><td>Data Change Logging - some history records would be really useful if they are displayed in the associated entities&#39; history</td><td>Backlog</td><td>D</td><td class = "green">Green</td><td></td></tr>
+<tr><td>44205</td><td>Extending the Data Change Logger</td><td>Backlog</td><td>D</td><td class = "green">Green</td><td></td></tr>
+<tr><td>44221</td><td>Make current level more obvious to the user</td><td>Backlog</td><td>D</td><td class = "green">Green</td><td></td></tr>
+<tr><td>41433</td><td>Searching with CSVs - Peformance</td><td>Backlog</td><td>D</td><td class = "red">Red</td><td></td></tr>
+<tr><td>41443</td><td>Change to Punch List Item entity</td><td>Backlog</td><td>D</td><td class = "red">Red</td><td></td></tr>
+<tr><td>42054</td><td>Implement &#39;Assume&#39; logins</td><td>Backlog</td><td>D</td><td class = "green">Green</td><td></td></tr>
+<tr><td>42491</td><td>Optimise attachment download</td><td>Backlog</td><td>D</td><td class = "green">Green</td><td></td></tr>
+<tr><td>42542</td><td>Import Improvements</td><td>Backlog</td><td>D</td><td class = "green">Green</td><td></td></tr>
+<tr><td>34555</td><td>Auto allocation of data</td><td>Backlog</td><td>D</td><td class = "green">Green</td><td></td></tr>
+<tr><td>39698</td><td>Equipment Type to Tag Pres Work List</td><td>Backlog</td><td>D</td><td class = "green">Green</td><td></td></tr>
+<tr><td>44172</td><td>Summary Reports - include count of records returned in report PDF version(s)</td><td>Backlog</td><td>D</td><td class = "green">Green</td><td></td></tr>
+<tr><td>42567</td><td>System/Sub System ITR Counts</td><td>Backlog</td><td>D</td><td class = "green">Green</td><td></td></tr>
+<tr><td>41101</td><td>Schemas - Primary Handover / Secondary Handover / Handovers / DMCC</td><td>Backlog</td><td>D</td><td class = "yellow">Yellow</td><td>Engage with stakeholders to define requirements.</td></tr>
+<tr><td>43908</td><td>Adding Resource Page to qedid.</td><td>Backlog</td><td>D</td><td class = "red">Red</td><td>Resourcing discussion required.</td></tr>
+<tr><td>44859</td><td>Global Saved Search</td><td>Backlog</td><td>D</td><td class = "yellow">Yellow</td><td>Linked to case 43950</td></tr>
+<tr><td>42533</td><td>Extra Validation When Importing</td><td>Backlog</td><td>E</td><td class = "green">Green</td><td></td></tr>
+<tr><td>44799</td><td>Ex Rated</td><td>Backlog</td><td>E</td><td class = "red">Red</td><td>Requirements not defined.</td></tr>
+<tr><td>40425</td><td>Search Validation</td><td>Backlog</td><td>E</td><td class = "green">Green</td><td></td></tr>
+<tr><td>41084</td><td>Tree View</td><td>Backlog</td><td>E</td><td class = "yellow">Yellow</td><td>Technical limitations preventing effective implementation.</td></tr>
+<tr><td>36559</td><td>Drop Down instead of Popup</td><td>Backlog</td><td>E</td><td class = "green">Green</td><td></td></tr>
+<tr><td>43235</td><td>Digital Certificate Edit OnScreen Fields Have No Max Length Character Error Shown Until After Save</td><td>Backlog</td><td>E</td><td class = "green">Green</td><td></td></tr>
+<tr><td>41099</td><td>Allow interaction with &quot;cloud&quot; hosting services.</td><td>Backlog</td><td>E</td><td class = "yellow">Yellow</td><td>Research required.</td></tr>
+<tr><td>41564</td><td>Attachment Edit Functionality </td><td>Backlog</td><td>F</td><td class = "red">Red</td><td></td></tr>
+<tr><td>40650</td><td>Clear recent/saved searches</td><td>Backlog</td><td>F</td><td class = "red">Red</td><td></td></tr>
+<tr><td>39537</td><td>Future Preservation Conflicts</td><td>Backlog</td><td>F</td><td class = "red">Red</td><td></td></tr>
+<tr><td>44190</td><td>Buttons should be at the bottom of the Digital Document Preview page like the other pages throughout the application</td><td>Backlog</td><td>F</td><td class = "red">Red</td><td></td></tr>
+<tr><td>44710</td><td>Multi-Tenancy (multiple Level As) Feasibility</td><td>Backlog</td><td>G</td><td class = "red">Red</td><td></td></tr>
+<tr><td>44793</td><td>Offline Mode</td><td>Backlog</td><td>G</td><td class = "red">Red</td><td></td></tr>
+<tr><td>44054</td><td>Barcoding - Parent Case</td><td>Backlog</td><td></td><td class = "green">Green</td><td></td></tr>
+<tr><td>34560</td><td>User Access &amp; Management</td><td>Phase 9</td><td>D</td><td class = "red">Red</td><td></td></tr>
+<tr><td>40586</td><td>qedID - C - Self Service Tools (Password Reset and Change)</td><td>Phase 9</td><td>D</td><td class = "green">Green</td><td></td></tr>
+</table>
+<table class="table-key table-striped">
 		<thead>
 			<tr class="head">
 				<th>Status</th>
@@ -535,11 +95,12 @@
 			<tr>
 		</tbody>
 	</table>
+    
 	<div class="table-key">&nbsp;</div>
 	<table class="table-key table-striped">
 		<thead>
 			<tr class="head">
-				<th>Cat.</th>
+				<th>Class</th>
 				<th>Description</th>
 			</tr>
 		</thead>
@@ -574,6 +135,4 @@
 			</tr>
 		</tbody>
 	</table>
-</div>
-</body>
-</html>
+</body></html>

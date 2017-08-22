@@ -1,5 +1,5 @@
 ﻿Case,Title,Milestone,Condition,Condition Info
-43211,Migrate to .Net Core 2.0,1.1,Green,script test
+43211,Migrate to .Net Core 2.0,1.1,Green,
 34551,Interface / API,1.1,Yellow,API specification required.
 44055,Barcode Reading,1.1,Yellow,PDF Barcode reading technology is still imperfect.
 44475,Code Refactor: Remove Delete buttons from Instance and User pages,1.1,Green,

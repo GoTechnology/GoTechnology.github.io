@@ -1,6 +1,6 @@
 # name of the html file
-$htmlhtmFileName = "..\index-test.htm"
-
+$htmFileName = "..\index-test.htm"
+$csvFileName = ".\src\Filter.csv"
 # header info
 $head = "<title>hub2 Roadmap</title>
 <link rel=`"stylesheet`" href=`"site.css`"/>
@@ -75,7 +75,7 @@ $key = "<table class=`"table-key table-striped`">
 # import the CSV and pipe through to the Convert command, add the header then (before the contents of Filter.csv) 
 # add the title. After the contents of Filter.csv add the key tables and output using utf8 encoding (so the css 
 # works correctly
-import-csv Filter.csv | ConvertTo-Html -head $head -PreContent $title -PostContent $key| Out-File -Encoding utf8 $htmFileName
+import-csv $csvFileName | ConvertTo-Html -head $head -PreContent $title -PostContent $key| Out-File -Encoding utf8 $htmFileName
 
 # Style the Condition fields by performing three find and replace operations.
 (Get-Content $htmFileName).Replace('<td>Green</td>','<td class = "green">Green</td>') | Set-Content $htmFileName

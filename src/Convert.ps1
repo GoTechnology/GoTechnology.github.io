@@ -3,7 +3,8 @@ $updatedOn = Get-Date
 # header + footer info
 $header = "<title>hub2 Roadmap</title>
 <link rel=`"stylesheet`" href=`"site.css`"/>
-<link href=`"https://fonts.googleapis.com/css?family=PT+Sans`" rel=`"stylesheet`">"
+<link href=`"https://fonts.googleapis.com/css?family=PT+Sans`" rel=`"stylesheet`">
+<link rel=`"shortcut icon`" href=`"favicon.ico`">"
 
 # title, will be injected before the filter file and shown at the top.
 $title = "<h1>hub2<sup>&trade;</sup> Roadmap</h1>

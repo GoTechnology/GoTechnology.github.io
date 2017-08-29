@@ -2,13 +2,12 @@
 43211,"Migrate to .Net Core 2.0","1.1","A","Green",
 44786,"Error Logging","1.1","A","Yellow","Researching best Error Logging solution."
 44937,"Move Saved Searches to MongoDB","1.1","A","Green",
-44478,"Rename Sub System to Subsystem","1.1","A","Green",
 44782,"Inspector User Accounts","1.1","A","Green",
 44783,"Inspector Permissions","1.1","A","Green",
-44788,"Hide Buttons for items with users don't have permissions","1.1","B","Green",
-44790,"Expanding Paperless ITRs/Certs","1.1","B","Yellow","Ongoing process to identify challenging ITRs/Certificates and develop resolutions."
-34551,"Interface / API","1.1","B","Yellow","API specification required."
 44784,"Caching","1.1","B","Green",
+44790,"Expanding Paperless ITRs/Certs","1.1","B","Yellow","Ongoing process to identify challenging ITRs/Certificates and develop resolutions."
+44788,"Hide Buttons for items with users don't have permissions","1.1","B","Green",
+34551,"Interface / API","1.1","B","Yellow","API specification required."
 44787,"Import Performance Enhancements","1.1","B","Yellow","Linked to Caching, case 44787"
 44857,"Add Additional Fields","1.1","C","Red","Stakeholder/user feedback required.."
 44055,"Barcode Reading","1.1","C","Yellow","PDF Barcode reading technology is still imperfect."
@@ -16,11 +15,7 @@
 44490,"Refactor: qedID - Synchronise generic search ","1.1","C","Green",
 42543,"Threaded and Queued Imports","1.2","B","Yellow","Research into queing strategy required."
 44858,"Custom Fields","1.2","C","Yellow","Work to identify best solution for custom fields based on different technical and functional requirments."
-44791,"qedID : Single Sign On / Federation","Backlog","C","Red","Research required."
-44792,"Context Sensitive Help","Backlog","C","Yellow","Research required."
-44795,"Construction Module","Backlog","C","Red","Requirements not defined."
-44794,"Clean Energy","Backlog","C","Red","Requirements in discussion."
-44796,"Operations Module","Backlog","C","Red","Requirements not defined."
+44478,"Rename Sub System to Subsystem","Backlog","A","Green",
 44798,"Piping Case","Backlog","C","Red","No consensus from stakeholders on implementation strategy."
 44949,"Direct Downloads from Blob Storage","Backlog","D","Green",
 42544,"New Columns (For changing Names)","Backlog","D","Green",
@@ -44,16 +39,24 @@
 42533,"Extra Validation When Importing","Backlog","E","Green",
 44799,"Ex Rated","Backlog","E","Red","Requirements not defined."
 40425,"Search Validation","Backlog","E","Green",
-41084,"Tree View","Backlog","E","Yellow","Technical limitations preventing effective implementation."
 36559,"Drop Down instead of Popup","Backlog","E","Green",
 43235,"Digital Certificate Edit OnScreen Fields Have No Max Length Character Error Shown Until After Save","Backlog","E","Green",
-41099,"Allow interaction with ""cloud"" hosting services.","Backlog","E","Yellow","Research required."
 41564,"Attachment Edit Functionality ","Backlog","F","Red",
 40650,"Clear recent/saved searches","Backlog","F","Red",
 39537,"Future Preservation Conflicts","Backlog","F","Red",
 44190,"Buttons should be at the bottom of the Digital Document Preview page like the other pages throughout the application","Backlog","F","Red",
-44710,"Multi-Tenancy (multiple Level As) Feasibility","Backlog","G","Red",
-44793,"Offline Mode","Backlog","G","Red",
 44054,"Barcoding - Parent Case","Backlog",,"Green",
-34560,"User Access & Management","Phase 9","D","Red",
-40586,"qedID - C - Self Service Tools (Password Reset and Change)","Phase 9","D","Green",
+44791,"qedID : Single Sign On / Federation","I&I","C","Red","Research required."
+44792,"Context Sensitive Help","I&I","C","Yellow","Research required."
+44794,"Clean Energy","I&I","C","Red","Requirements in discussion."
+44795,"Construction Module","I&I","C","Red","Requirements not defined."
+44796,"Operations Module","I&I","C","Red","Requirements not defined."
+45239,"Electronic Handover Dossier","I&I","C","Red","Research required."
+45244,"RFID Integration","I&I","D","Red","Research required."
+41084,"Tree View","I&I","E","Yellow","Technical limitations preventing effective implementation."
+45076,"Planning module","I&I","E","Red","Requirements not defined."
+41099,"Allow interaction with ""cloud"" hosting services.","I&I","E","Yellow","Research required."
+45077,"Procedure Writing","I&I","G","Red","Research required."
+45078,"Network Logic Diagrams and Constraint Modelling","I&I","G","Red","No formal requirements defined."
+44710,"Multi-Tenancy (multiple Level As) Feasibility","I&I","G","Red",
+44793,"Offline Mode","I&I","G","Red",

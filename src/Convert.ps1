@@ -36,8 +36,7 @@ $key = "<table class=`"table-key table-striped`">
 			<tr>
 		</tbody>
 	</table>
-    
-	<div class=`"table-key`">&nbsp;</div>
+	<div class=`"table-key`"><hr/></div>
 	<table class=`"table-key table-striped`">
 		<thead>
 			<tr class=`"head`">
@@ -48,34 +47,36 @@ $key = "<table class=`"table-key table-striped`">
 		<tbody>
 			<tr>
 				<td>A</td>
-				<td>Extremely likely.</td>
+				<td>Extremely high.</td>
 			</tr>
 			<tr>
 				<td>B</td>
-				<td>Very likely.</td>
+				<td>Very high.</td>
 			</tr>
 			<tr>
 				<td>C</td>
-				<td>Quite likely.</td>
+				<td>Quite high.</td>
 			</tr>
 			<tr>
 				<td>D</td>
-				<td>Possible.</td>
+				<td>Moderate</td>
 			</tr>
 			<tr>
 				<td>E</td>
-				<td>Quite unlikely.</td>
+				<td>Quite low.</td>
 			</tr>
 			<tr>
 				<td>F</td>
-				<td>Very unlikely.</td>
+				<td>Very low.</td>
 			</tr>
 			<tr>
 				<td>G</td>
-				<td>Extremely unlikely.</td>
+				<td>Extremely low.</td>
 			</tr>
 		</tbody>
-	</table>"
+	</table>
+<div class=`"table-key`">Request Index Class represents an amalgamated ranking of possible modifications based on business and client drivers.<hr/></div>
+	"
 
 # Make sure we're in the right place
 cd\

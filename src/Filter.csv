@@ -1,8 +1,8 @@
 ﻿"Case","Title","Milestone","Class","Condition","Condition Info"
 43211,"Migrate to .Net Core 2.0","1.1","A","Green",
+44937,"Move Saved Searches to MongoDB","1.1","A","Green",
 44782,"Inspector User Accounts","1.1","A","Green",
 44786,"Error Logging","1.1","A","Yellow","Researching best Error Logging solution."
-44937,"Move Saved Searches to MongoDB","1.1","A","Green",
 44783,"Inspector Permissions","1.1","A","Green",
 44788,"Hide Buttons for items with users don't have permissions","1.1","B","Green",
 44784,"Caching","1.1","B","Green",
@@ -15,6 +15,7 @@
 42543,"Threaded and Queued Imports","1.2","B","Yellow","Research into queing strategy required."
 44857,"Add Additional Fields","1.2","C","Red","Stakeholder/user feedback required.."
 44858,"Custom Fields","1.2","C","Yellow","Work to identify best solution for custom fields based on different technical and functional requirments."
+45363,"Buttons at Top & Bottom of sections.","1.2","C","Green",
 42542,"Import Improvements","1.2","D","Green",
 42054,"Implement 'Assume' logins","1.2","D","Green",
 41433,"Searching with CSVs - Peformance","1.2","D","Red",
@@ -52,7 +53,6 @@
 44795,"Construction Module","I&I","C","Red","Requirements not defined."
 44796,"Operations Module","I&I","C","Red","Requirements not defined."
 45239,"Electronic Handover Dossier","I&I","C","Red","Research required."
-45363,"Buttons at Top & Bottom of sections.","I&I","C","Green",
 45244,"RFID Integration","I&I","D","Red","Research required."
 41084,"Tree View","I&I","E","Yellow","Technical limitations preventing effective implementation."
 41099,"Allow interaction with ""cloud"" hosting services.","I&I","E","Yellow","Research required."

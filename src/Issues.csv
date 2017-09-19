@@ -1,0 +1,10 @@
+﻿"Case","Title","Milestone","Class","Condition","Condition Info"
+45629,"Ordering of reports in the Edit Report Screen is not saved and reflected in the Report List Screen","1.1",,,
+45118,"qedID Recent Searches are storing more than 5 entries in the dropdown.","1.1",,,
+43235,"Digital Certificate Edit OnScreen Fields Have No Max Length Character Error Shown Until After Save","Backlog","E","Green",
+45630,"Tag Detailed Report 404 error on created to date filter","Backlog",,,
+45505,"qedID - Arial font is displaying as default instead of PT San in Chrome","Backlog",,,
+43903,"Save needs to be clicked twice via automation, admin handovers","Backlog",,,
+45316,"Duplicate bookmarks cause exceptions","Backlog",,,
+45571,"Giving user Attachment permission also grant access to other level Es","Backlog",,,
+44531,"Quick Search bar returning error when selecting any value","Backlog",,,

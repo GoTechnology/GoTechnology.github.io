@@ -20,10 +20,10 @@
 42054,"Implement 'Assume' logins","1.2","D","Green",
 41433,"Searching with CSVs - Peformance","1.2","D","Red",
 40650,"Clear recent/saved searches","1.2","F","Red",
+45747,"Ability to add images to ITR Templates","1.2",,"Yellow","Image capability not yet researched."
 44478,"Rename Sub System to Subsystem","Backlog","A","Green",
 45231,"Tagged Items have the same Search Summary Bar Descriptions as Tag","Backlog","C","Green",
 44798,"Piping Case","Backlog","C","Red","No consensus from stakeholders on implementation strategy."
-43976,"Aliasing ","Backlog","D","Green",
 34555,"Auto allocation of data","Backlog","D","Green",
 39698,"Equipment Type to Tag Pres Work List","Backlog","D","Green",
 41443,"Change to Punch List Item entity","Backlog","D","Red",

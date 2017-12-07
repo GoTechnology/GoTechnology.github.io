@@ -1,64 +1,18 @@
-﻿"Case","Title","Milestone","Class","Condition","Condition Info"
-43211,"Migrate to .Net Core 2.0","1.1","A","Green",
-44782,"Inspector User Accounts","1.1","A","Green",
-44937,"Move Saved Searches to MongoDB","1.1","A","Green",
-44786,"Error Logging","1.1","A","Yellow","Researching best Error Logging solution."
-44788,"Hide Buttons for items with users don't have permissions","1.1","B","Green",
-44787,"Import Performance Enhancements","1.1","B","Yellow","Linked to Caching, case 44787"
-44784,"Caching","1.1","B","Green",
-44790,"Expanding Paperless ITRs/Certs","1.1","B","Yellow","Ongoing process to identify challenging ITRs/Certificates and develop resolutions."
-44055,"Barcode Reading","1.1","C","Yellow","PDF Barcode reading technology is still imperfect."
-44475,"Code Refactor: Remove Delete buttons from Instance and User pages","1.1","C","Green",
-44490,"Refactor: qedID - Synchronise generic search ","1.1","C","Green",
-34551,"Interface / API","1.2","B","Yellow","API specification required."
-42543,"Threaded and Queued Imports","1.2","B","Yellow","Research into queing strategy required."
-44858,"Custom Fields","1.2","C","Yellow","Work to identify best solution for custom fields based on different technical and functional requirments."
-44857,"Add Additional Fields","1.2","C","Red","Stakeholder/user feedback required.."
-45911,"Enable Auto Filter by default on Excel Exports & Reports","1.2","C","Yellow","Should be possible, some research needed."
-45363,"Buttons at Top & Bottom of sections.","1.2","C","Green",
-41433,"Searching with CSVs - Peformance","1.2","D","Red",
-42054,"Implement 'Assume' logins","1.2","D","Green",
-42542,"Import Improvements","1.2","D","Green",
-40650,"Clear recent/saved searches","1.2","F","Red",
-45747,"Ability to add images to ITR Templates","1.2",,"Yellow","Image capability not yet researched."
-44478,"Rename Sub System to Subsystem","Backlog","A","Green",
-45231,"Tagged Items have the same Search Summary Bar Descriptions as Tag","Backlog","C","Green",
-44798,"Piping Case","Backlog","C","Red","No consensus from stakeholders on implementation strategy."
-41443,"Change to Punch List Item entity","Backlog","D","Red",
-34555,"Auto allocation of data","Backlog","D","Green",
-39698,"Equipment Type to Tag Pres Work List","Backlog","D","Green",
-42491,"Optimise attachment download","Backlog","D","Green",
-42544,"New Columns (For changing Names)","Backlog","D","Green",
-42567,"System/Sub System ITR Counts","Backlog","D","Green",
-43535,"Procedure Popup shows invalid Procedure","Backlog","D","Green",
-44168,"Data Change Logging - some history records would be really useful if they are displayed in the associated entities' history","Backlog","D","Green",
-44172,"Summary Reports - include count of records returned in report PDF version(s)","Backlog","D","Green",
-44205,"Extending the Data Change Logger","Backlog","D","Green",
-44221,"Make current level more obvious to the user","Backlog","D","Green",
-44949,"Direct Downloads from Blob Storage","Backlog","D","Green",
-41101,"Schemas - Primary Handover / Secondary Handover / Handovers / DMCC","Backlog","D","Yellow","Engage with stakeholders to define requirements."
-43908,"Adding Resource Page to qedid.","Backlog","D","Red","Resourcing discussion required."
-44859,"Global Saved Search","Backlog","D","Yellow","Linked to case 43950"
-42533,"Extra Validation When Importing","Backlog","E","Green",
-44799,"Ex Rated","Backlog","E","Red","Requirements not defined."
-36559,"Drop Down instead of Popup","Backlog","E","Green",
-40425,"Search Validation","Backlog","E","Green",
-43235,"Digital Certificate Edit OnScreen Fields Have No Max Length Character Error Shown Until After Save","Backlog","E","Green",
-39537,"Future Preservation Conflicts","Backlog","F","Red",
-44190,"Buttons should be at the bottom of the Digital Document Preview page like the other pages throughout the application","Backlog","F","Red",
-44054,"Barcoding - Parent Case","Backlog",,"Green",
-44791,"qedID : Single Sign On / Federation","I&I","C","Red","Research required."
-44792,"Context Sensitive Help","I&I","C","Yellow","Research required."
-44794,"Clean Energy","I&I","C","Red","Requirements in discussion."
-44795,"Construction Module","I&I","C","Red","Requirements not defined."
-44796,"Operations Module","I&I","C","Red","Requirements not defined."
-45239,"Electronic Handover Dossier","I&I","C","Red","Research required."
-45244,"RFID Integration","I&I","D","Red","Research required."
-41084,"Tree View","I&I","E","Yellow","Technical limitations preventing effective implementation."
-41099,"Allow interaction with ""cloud"" hosting services.","I&I","E","Yellow","Research required."
-45076,"Planning module","I&I","E","Red","Requirements not defined."
-41564,"Attachment Edit Functionality ","I&I","F","Red",
-44710,"Multi-Tenancy (multiple Level As) Feasibility","I&I","G","Red",
-44793,"Offline Mode","I&I","G","Red",
-45077,"Procedure Writing","I&I","G","Red","Research required."
-45078,"Network Logic Diagrams and Constraint Modelling","I&I","G","Red","No formal requirements defined."
+﻿"Case","Title","Milestone","Condition","Condition Info"
+46796,"qedid listed in qedid alongside hub2 instances","Undecided",,
+46189,"Tagged Item Search will match Tag ITRs on a different Level when searching via Tag ITR Filters","1.2",,
+46844,"""Sign In Failed Page"" displays after a successful qedID sign in (see description for details)","1.2",,
+46257,"Tagged Item ""TagITR(s)"" column on Search Screen list ITRs more than one time","1.2",,
+45686,"No Custom Code 500 Error Page","1.2",,
+46850,"Digital Document - characters limit for Comments","Backlog",,
+46671,"Users unable to create Levels without a currently selected Level E","Backlog",,
+46622,"Saved Searches (hub2) - Search filters should NOT be case sensitive","Backlog",,
+46619,"qedID - 500 error occurs when viewing User Instance Roles","Backlog",,
+45957,"Sub System table validation error message is not displayed at the same time as the other required field in Tagged Item Add page","Backlog",,
+45571,"Attachment permission at Level C means all child Level Es are visible on select screen.","Backlog",,
+45630,"Tag Detailed Report 404 error on created to date filter","Backlog",,
+43903,"Save needs to be clicked twice via automation, admin handovers","Backlog",,
+45316,"Duplicate bookmarks cause exceptions","Backlog",,
+43235,"Digital Certificate Edit OnScreen Fields Have No Max Length Character Error Shown Until After Save","Backlog","Green",
+44531,"Quick Search bar returning error when selecting any value","Backlog",,
+46667,"Authorised Person - locked user account remains in the Hub User pop-up","I&I",,

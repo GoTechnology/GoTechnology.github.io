@@ -1,7 +1,7 @@
 body{font-family: 'PT Sans', sans-serif;background-color:#404041;color:#f9f9ff}
 td{padding:4px;}
 a{color:#009ddc;font-weight:bold;}
-table{margin-top:10px;border-spacing:0px;}
+table{margin:auto;border-spacing:0px;}
 .table-striped{border:2px solid #59595b;}
 .table-work{float:left;width:86%;border-radius:3px;float:left;width:86%;border-radius:3px;}
 .table-key{float:right;width:12%;border-radius:3px;}
@@ -19,3 +19,4 @@ tr:nth-of-type(2n) {background-color:#4d4d4e;}
 .bold{font-weight:bold;}
 .italic{font-style:italic;}
 .red-text{color:rgb(255, 129, 129);}
+hr{border:2px solid #59595b;}

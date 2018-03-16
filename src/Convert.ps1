@@ -39,6 +39,11 @@ $title = "<h1><img src=`"qedilogodevice_white.png`"> hub2 Documents</h1>
 					<td><a href=`"v/1_2.docx`">.docx</a></td>
 					<td><a href=`"v/1_2.pdf`">.pdf</a></td>
 				</tr>
+				<tr>
+					<td><a href=`"v/1_3.htm`">1.3</a></td>
+					<td><a href=`"v/1_3.docx`">.docx</a></td>
+					<td><a href=`"v/1_3.pdf`">.pdf</a></td>
+				</tr>
 			</table>
 		<hr />
 		</div>

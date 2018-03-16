@@ -1,0 +1,1453 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>hub2 Version Notes 1.3</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:DaxlinePro-Bold;
+	panose-1:2 0 5 3 6 0 0 2 0 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:24.0pt;
+	margin-left:1.0cm;
+	text-align:justify;
+	text-indent:-1.0cm;
+	page-break-after:avoid;
+	background:#002D62;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	color:white;
+	text-transform:uppercase;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:24.0pt;
+	margin-left:1.0cm;
+	text-align:justify;
+	text-indent:-1.0cm;
+	page-break-after:avoid;
+	border:none;
+	padding:0cm;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	font-variant:small-caps;
+	color:#002D62;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:1.0cm;
+	text-align:justify;
+	text-indent:-1.0cm;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#002D62;
+	font-weight:bold;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#002D62;
+	font-weight:bold;}
+h5
+	{mso-style-link:"Heading 5 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:1.0cm;
+	text-indent:-1.0cm;
+	line-height:150%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#002D62;
+	font-weight:normal;
+	font-style:italic;}
+h6
+	{mso-style-link:"Heading 6 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:57.6pt;
+	text-align:justify;
+	text-indent:-57.6pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	font-weight:bold;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Heading 7 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:64.8pt;
+	text-align:justify;
+	text-indent:-64.8pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Heading 8 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:72.0pt;
+	text-align:justify;
+	text-indent:-72.0pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	font-style:italic;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Heading 9 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:79.2pt;
+	text-align:justify;
+	text-indent:-79.2pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Cambria",serif;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:9.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	text-transform:uppercase;
+	font-weight:bold;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:11.05pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	font-variant:small-caps;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:93.55pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-39.7pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	font-style:italic;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:33.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:115%;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:44.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:115%;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:55.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:66.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:77.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:88.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-link:"Footnote Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"Comment Text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#002D62;
+	font-weight:bold;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#949CA1;
+	font-style:italic;}
+p.MsoTof, li.MsoTof, div.MsoTof
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	font-weight:bold;}
+span.MsoFootnoteReference
+	{vertical-align:super;}
+span.MsoEndnoteReference
+	{vertical-align:super;}
+p.MsoEndnoteText, li.MsoEndnoteText, div.MsoEndnoteText
+	{mso-style-link:"Endnote Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#72CCD2;
+	text-decoration:underline;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-link:"Document Map Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:8.0pt;
+	font-family:"Tahoma",sans-serif;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"Comment Subject Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:8.0pt;
+	font-family:"Tahoma",sans-serif;}
+span.MsoPlaceholderText
+	{color:gray;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoRMPane, li.MsoRMPane, div.MsoRMPane
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.MsoBookTitle
+	{font-variant:small-caps;
+	letter-spacing:.25pt;
+	font-weight:bold;}
+p.MsoBibliography, li.MsoBibliography, div.MsoBibliography
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:24.0pt;
+	margin-left:1.0cm;
+	text-indent:-1.0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	background:#002D62;
+	font-size:14.0pt;
+	font-family:"Cambria",serif;
+	color:#365F91;
+	text-transform:uppercase;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	color:white;
+	text-transform:uppercase;
+	background:#002D62;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-variant:small-caps;
+	color:#002D62;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	color:#002D62;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Times New Roman",serif;
+	color:#002D62;
+	font-weight:bold;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-link:"Heading 5";
+	font-family:"Times New Roman",serif;
+	color:#002D62;
+	font-style:italic;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-link:"Heading 6";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-link:"Heading 7";
+	font-family:"Times New Roman",serif;}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-link:"Heading 8";
+	font-family:"Times New Roman",serif;
+	font-style:italic;}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	mso-style-link:"Heading 9";
+	font-family:"Cambria",serif;}
+p.Footerbox1, li.Footerbox1, div.Footerbox1
+	{mso-style-name:"Footer box 1";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	color:white;
+	font-weight:bold;}
+p.Footerbox2, li.Footerbox2, div.Footerbox2
+	{mso-style-name:"Footer box 2";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	color:white;
+	font-weight:bold;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma",sans-serif;}
+p.Footerboxcontent1, li.Footerboxcontent1, div.Footerboxcontent1
+	{mso-style-name:"Footer box content 1";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#002060;
+	font-weight:bold;}
+p.Headermain, li.Headermain, div.Headermain
+	{mso-style-name:"Header main";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Book Antiqua",serif;
+	color:#002060;
+	font-weight:bold;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;
+	color:#002D62;
+	font-weight:bold;}
+p.Footerboxcontent2, li.Footerboxcontent2, div.Footerboxcontent2
+	{mso-style-name:"Footer box content 2";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#002060;
+	font-weight:bold;}
+span.DocumentMapChar
+	{mso-style-name:"Document Map Char";
+	mso-style-link:"Document Map";
+	font-family:"Tahoma",sans-serif;}
+p.DocumentTitle, li.DocumentTitle, div.DocumentTitle
+	{mso-style-name:"Document Title";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:115%;
+	font-size:24.0pt;
+	font-family:"Calibri",sans-serif;
+	font-variant:small-caps;
+	color:white;
+	font-weight:bold;}
+p.Documentnumber, li.Documentnumber, div.Documentnumber
+	{mso-style-name:"Document number";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:115%;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#002D62;
+	font-weight:bold;}
+p.TableHeader, li.TableHeader, div.TableHeader
+	{mso-style-name:"Table Header";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:18.0pt;
+	margin-left:14.2pt;
+	text-align:center;
+	text-indent:-14.2pt;
+	background:#002D62;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	text-transform:uppercase;
+	font-weight:bold;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+p.Figure, li.Figure, div.Figure
+	{mso-style-name:Figure;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:18.0pt;
+	text-align:center;
+	text-indent:-18.0pt;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	font-weight:bold;}
+p.Table, li.Table, div.Table
+	{mso-style-name:Table;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:72.0pt;
+	text-align:center;
+	text-indent:-18.0pt;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	font-weight:bold;}
+span.CommentTextChar
+	{mso-style-name:"Comment Text Char";
+	mso-style-link:"Comment Text";}
+span.CommentSubjectChar
+	{mso-style-name:"Comment Subject Char";
+	mso-style-link:"Comment Subject";
+	font-weight:bold;}
+p.Reference, li.Reference, div.Reference
+	{mso-style-name:Reference;
+	mso-style-link:"Reference Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	font-style:italic;
+	text-decoration:underline;}
+span.ReferenceChar
+	{mso-style-name:"Reference Char";
+	mso-style-link:Reference;
+	font-family:"Calibri",sans-serif;
+	font-style:italic;
+	text-decoration:underline;}
+span.FootnoteTextChar
+	{mso-style-name:"Footnote Text Char";
+	mso-style-link:"Footnote Text";}
+p.Monospaced, li.Monospaced, div.Monospaced
+	{mso-style-name:Monospaced;
+	mso-style-link:"Monospaced Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	text-align:justify;
+	line-height:115%;
+	font-size:9.5pt;
+	font-family:Consolas;}
+span.MonospacedChar
+	{mso-style-name:"Monospaced Char";
+	mso-style-link:Monospaced;
+	font-family:Consolas;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+p.EntityName, li.EntityName, div.EntityName
+	{mso-style-name:EntityName;
+	mso-style-link:"EntityName Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	text-decoration:underline;}
+span.EntityNameChar
+	{mso-style-name:"EntityName Char";
+	mso-style-link:EntityName;
+	text-decoration:underline;}
+p.ColumnVariableName, li.ColumnVariableName, div.ColumnVariableName
+	{mso-style-name:"Column\/Variable Name";
+	mso-style-link:"Column\/Variable Name Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:Consolas;}
+span.ColumnVariableNameChar
+	{mso-style-name:"Column\/Variable Name Char";
+	mso-style-link:"Column\/Variable Name";
+	font-family:Consolas;}
+p.Type, li.Type, div.Type
+	{mso-style-name:Type;
+	mso-style-link:"Type Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:9.0pt;
+	font-family:Consolas;
+	color:#0034FF;}
+span.TypeChar
+	{mso-style-name:"Type Char";
+	mso-style-link:Type;
+	font-family:Consolas;
+	color:#0034FF;}
+p.OnScreenelement, li.OnScreenelement, div.OnScreenelement
+	{mso-style-name:"On Screen element";
+	mso-style-link:"On Screen element Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:white;}
+span.OnScreenelementChar
+	{mso-style-name:"On Screen element Char";
+	mso-style-link:"On Screen element";
+	color:white;}
+p.FieldName, li.FieldName, div.FieldName
+	{mso-style-name:FieldName;
+	mso-style-link:"FieldName Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	text-decoration:underline;}
+span.FieldNameChar
+	{mso-style-name:"FieldName Char";
+	mso-style-link:FieldName;
+	font-family:"Calibri",sans-serif;
+	text-decoration:underline;}
+span.EndnoteTextChar
+	{mso-style-name:"Endnote Text Char";
+	mso-style-link:"Endnote Text";}
+span.glyphicon
+	{mso-style-name:glyphicon;}
+span.Mention1
+	{mso-style-name:Mention1;
+	color:#2B579A;
+	background:#E6E6E6;}
+span.Mention2
+	{mso-style-name:Mention2;
+	color:#2B579A;
+	background:#E6E6E6;}
+span.Mention3
+	{mso-style-name:Mention3;
+	color:#2B579A;
+	background:#E6E6E6;}
+p.Image, li.Image, div.Image
+	{mso-style-name:Image;
+	mso-style-link:"Image Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.ImageChar
+	{mso-style-name:"Image Char";
+	mso-style-link:Image;}
+p.hub2, li.hub2, div.hub2
+	{mso-style-name:hub2;
+	mso-style-link:"hub2 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:DaxlinePro-Bold;}
+span.hub2Char
+	{mso-style-name:"hub2 Char";
+	mso-style-link:hub2;
+	font-family:DaxlinePro-Bold;}
+span.Mention4
+	{mso-style-name:Mention4;
+	color:#2B579A;
+	background:#E6E6E6;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:78.0pt 35.35pt 63.8pt 35.45pt;
+	border:solid windowtext 1.0pt;
+	padding:24.0pt 24.0pt 24.0pt 24.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB link=blue vlink="#72CCD2">
+
+<div class=WordSection1>
+
+<h1><a name="_Toc494448423"></a><a name="_Toc486318195"></a><a
+name="_Toc485811591"></a><a name="_Toc485810586"></a><a name="_Toc481673834"></a><a
+name="_Toc481673137"></a><a name="_Toc481668975"></a><a name="_Toc481595067"></a><a
+name="_Toc481593731"></a><a name="_Toc481590169"></a><a name="_Toc481569848"></a><a
+name="_Toc473020538"></a><a name="_Toc506818350">SECTION 1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Changes in v1.3</a></h1>
+
+<div style='border-top:solid #002060 1.0pt;border-left:none;border-bottom:solid #002060 1.0pt;
+border-right:none;padding:1.0pt 0cm 2.0pt 0cm'>
+
+<h2 style='border:none;padding:0cm'><a name="_Toc506818351">Section 1.1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>About this Document</a></h2>
+
+</div>
+
+<h3><a name="_Toc506818355"></a><a name="_Toc502927491">1.1.1.<span
+style='font:7.0pt "Times New Roman"'> </span>Purpose</a></h3>
+
+<p class=MsoNormal>This document provides a brief overview of the changes made
+between V1.2 and V1.3 of hub2, along with where further details of each change can
+be found within the updated functional specification, in addition to a listing
+of completed bug fixes and outstanding known issues.</p>
+
+<div style='border-top:solid #002060 1.0pt;border-left:none;border-bottom:solid #002060 1.0pt;
+border-right:none;padding:1.0pt 0cm 1.0pt 0cm'>
+
+<h2>Section 1.2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Fixed Issues</h2>
+
+</div>
+
+<h3 style='margin-left:0cm;text-indent:0cm'><a name="_Toc506818356"></a><a
+name="_Toc493666617"></a><a name="_Toc485904188"></a><a name="_Toc473896524"></a><a
+name="_Toc466359664"></a><a name="_Toc465774016"></a><a name="_Toc461804168">1.2.1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Issues</a>
+fixed in V1.3 of hub2</h3>
+
+<table class=MsoTable15Grid4Accent6 border=1 cellspacing=0 cellpadding=0
+ width=699 style='width:524.25pt;border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='page-break-inside:avoid'>
+   <td width=85 valign=top style='width:63.55pt;border:solid #006595 1.0pt;
+   border-right:none;background:#006595;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal><b><span style='color:white'>Case</span></b></p>
+   </td>
+   <td width=180 valign=top style='width:134.65pt;border-top:solid #006595 1.0pt;
+   border-left:none;border-bottom:solid #006595 1.0pt;border-right:none;
+   background:#006595;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal><b><span style='color:white'>Title [sic]</span></b></p>
+   </td>
+   <td width=435 valign=top style='width:326.05pt;border:solid #006595 1.0pt;
+   border-left:none;background:#006595;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal><b><span style='color:white'>Details</span></b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='page-break-inside:avoid'>
+  <td width=85 valign=top style='width:63.55pt;border:solid #26B8FF 1.0pt;
+  border-top:none;background:#B6E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><b>47682</b></p>
+  </td>
+  <td width=180 valign=top style='width:134.65pt;border-top:none;border-left:
+  none;border-bottom:solid #26B8FF 1.0pt;border-right:solid #26B8FF 1.0pt;
+  background:#B6E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>‘Drawing
+  Type – Wrong Header’</span></p>
+  </td>
+  <td width=435 valign=top style='width:326.05pt;border-top:none;border-left:
+  none;border-bottom:solid #26B8FF 1.0pt;border-right:solid #26B8FF 1.0pt;
+  background:#B6E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'>The header on the
+  Drawing Type Add and Edit page was corrected from “Activity” to “Drawing
+  Type” .</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=85 valign=top style='width:63.55pt;border:solid #26B8FF 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><b>47669</b></p>
+  </td>
+  <td width=180 valign=top style='width:134.65pt;border-top:none;border-left:
+  none;border-bottom:solid #26B8FF 1.0pt;border-right:solid #26B8FF 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>Import
+  – data is updated via Simulate import</span></p>
+  </td>
+  <td width=435 valign=top style='width:326.05pt;border-top:none;border-left:
+  none;border-bottom:solid #26B8FF 1.0pt;border-right:solid #26B8FF 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'>The Tag Sub System,
+  Procedure System and various MOC columns were incorrectly updated via
+  Simulated imports. </p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=85 valign=top style='width:63.55pt;border:solid #26B8FF 1.0pt;
+  border-top:none;background:#B6E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><b>47667</b></p>
+  </td>
+  <td width=180 valign=top style='width:134.65pt;border-top:none;border-left:
+  none;border-bottom:solid #26B8FF 1.0pt;border-right:solid #26B8FF 1.0pt;
+  background:#B6E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>Digital
+  Document – Signed Off Data displayed under incorrect column in PDF</span></p>
+  </td>
+  <td width=435 valign=top style='width:326.05pt;border-top:none;border-left:
+  none;border-bottom:solid #26B8FF 1.0pt;border-right:solid #26B8FF 1.0pt;
+  background:#B6E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>In
+  rare circumstances, a Digital Document could be created in such a way that
+  the Sign Offs would display in the wrong order.  This has now been fixed and Sign
+  Offs always appear under the correct header.</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=85 valign=top style='width:63.55pt;border:solid #26B8FF 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><b>47087</b></p>
+  </td>
+  <td width=180 valign=top style='width:134.65pt;border-top:none;border-left:
+  none;border-bottom:solid #26B8FF 1.0pt;border-right:solid #26B8FF 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>Azure
+  Redis Cache fails to reconnect automatically</span></p>
+  </td>
+  <td width=435 valign=top style='width:326.05pt;border-top:none;border-left:
+  none;border-bottom:solid #26B8FF 1.0pt;border-right:solid #26B8FF 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>Distributed
+  caching is used as part of the hub2 solution to allow repeatedly accessed data
+  to be retrieved more quickly.   Automatic reconnection has been added to
+  facilitate recovery should cache occur.</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=85 valign=top style='width:63.55pt;border:solid #26B8FF 1.0pt;
+  border-top:none;background:#B6E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><b>47747</b></p>
+  </td>
+  <td width=180 valign=top style='width:134.65pt;border-top:none;border-left:
+  none;border-bottom:solid #26B8FF 1.0pt;border-right:solid #26B8FF 1.0pt;
+  background:#B6E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>Admin
+  – Deleting Level A Aliases </span></p>
+  </td>
+  <td width=435 valign=top style='width:326.05pt;border-top:none;border-left:
+  none;border-bottom:solid #26B8FF 1.0pt;border-right:solid #26B8FF 1.0pt;
+  background:#B6E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>When
+  attempting to delete an Alias from the Level A admin screen, the screen does
+  not update and the aliases are not deleted. This has now been fixed.</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=85 valign=top style='width:63.55pt;border:solid #26B8FF 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><b>47727 </b></p>
+  </td>
+  <td width=180 valign=top style='width:134.65pt;border-top:none;border-left:
+  none;border-bottom:solid #26B8FF 1.0pt;border-right:solid #26B8FF 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>Tagged
+  Item – Incorrect Tag Type for new Tagged Items</span></p>
+  </td>
+  <td width=435 valign=top style='width:326.05pt;border-top:none;border-left:
+  none;border-bottom:solid #26B8FF 1.0pt;border-right:solid #26B8FF 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'><span lang=EN-US>When
+  creating a new Tagged Item the Type could occasionally be set incorrectly. This
+  has been corrected.</span></p>
+  </td>
+ </tr>
+</table>
+
+<div style='border-top:solid #002060 1.0pt;border-left:none;border-bottom:solid #002060 1.0pt;
+border-right:none;padding:1.0pt 0cm 1.0pt 0cm'>
+
+<h2><a name="_Toc506818357">Section 1.3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Outstanding Issues</a></h2>
+
+</div>
+
+<p class=MsoNormal>A full list of “Known Issues” can be found at <a
+href="https://qedi-gotechnology.github.io/">https://qedi-gotechnology.github.io/</a></p>
+
+<div style='border-top:solid #002060 1.0pt;border-left:none;border-bottom:solid #002060 1.0pt;
+border-right:none;padding:1.0pt 0cm 1.0pt 0cm'>
+
+<h2><a name="_Toc506818359">Section 1.4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Features</a></h2>
+
+</div>
+
+<p class=MsoNormal>The following functionality has been added in v1.3.  </p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>API </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Queued Imports</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Custom Fields Searching</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Equipment Type to PWL</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Multi Tag ITRs – Table Bookmarks</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Q-Pack Reports</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Light Theme</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Loops Added</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Parent Tags Added</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Import Results Column Order</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Import Results Summary</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Total Field for Summary Count Reports</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Bookmark Tidy-up</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Future Dates on Validation Imports</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Subset of Users in Authorised Person Popup</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Add Button in Parent Items View Page</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Generate Buttons on Search Pages</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Mock ITRs</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Additional Filters on Attachment Search</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Prevent API Fields being used in Entities Names</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Better Quality Logos</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>User Name on Import Results Search</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Company on Digital Document</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Handover Filters Order</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Remove Import File Button</p>
+
+<p class=MsoListParagraphCxSpLast>&nbsp;</p>
+
+<h3><a name="_Toc506818360">1.4.1.<span style='font:7.0pt "Times New Roman"'> </span>API</a></h3>
+
+<p class=MsoNormal><b>Full Details in Swagger API Specification, and supporting
+document</b></p>
+
+<p class=MsoNormal>An API has been added to hub2 to allow data in most
+‘Reference Tables’ to be Read, Created, Updated and Deleted. Full details of
+the API are available on request.</p>
+
+<h3><a name="_Toc506818361">1.4.2.<span style='font:7.0pt "Times New Roman"'> </span>Queued
+Imports</a></h3>
+
+<p class=MsoNormal><b>Full Details in 37.1 - Imports Definition, 37.1.6 –
+Enqueue Import &amp; 37.1.10 – Import Result Email </b></p>
+
+<p class=MsoNormal>Full and Simulated Imports now operate in a queued fashion
+where, once an Import is submitted, Users can now continue to use different
+pages and sections of hub2 while the Import is processed in the background.</p>
+
+<p class=MsoNormal>Once complete a notification email will be sent to the user,
+informing them of the Import results.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818362">1.4.3.<span style='font:7.0pt "Times New Roman"'> </span>Custom
+Fields Searching</a></h3>
+
+<p class=MsoNormal><b>Full Details in 39.2.3 – Custom Fields - Editing Custom
+Values</b></p>
+
+<p class=MsoNormal>Custom Fields were added in v1.2 and allowed Users with the
+appropriate permissions to create new fields to be present on Tagged Items.  In
+V1.3 these Custom Fields will also appear on the appropriate Search pages to
+allow their use in locating any related records.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818363">1.4.4.<span style='font:7.0pt "Times New Roman"'> </span>Equipment
+Type to PWL</a></h3>
+
+<p class=MsoNormal><b>Full Details in Section 32.2 Equipment Type to PWL</b></p>
+
+<p class=MsoNormal>An Equipment Type to PWL Review page has been added under
+the Preservation menu which works in a similar way to the already available
+Equipment Type to ITR Review, allowing comparison between the appropriate Auto
+Allocation and the actual assignment of PWLs.</p>
+
+<p class=MsoNormal>If any changes are required in this regard, they can be made
+quickly and easily from the new page.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818364">1.4.5.<span style='font:7.0pt "Times New Roman"'> </span>Multi
+Tag ITRs – Table Bookmarks</a></h3>
+
+<p class=MsoNormal><b>Full Details in 33.2.1.3 Certification Output - Table
+Bookmarks</b></p>
+
+<p class=MsoNormal>Table bookmarks can now be added to DOTX Templates to allow population
+of list based information, such as Tag Drawings.  </p>
+
+<p class=MsoNormal>Setup involves two or more bookmarks:  The first bookmark is
+known as the table bookmark and defines the basic contents of the table (for
+example a list of Tag Drawings).  </p>
+
+<p class=MsoNormal>Each additional bookmark defines the column of information
+to be displayed, for example a bookmark for Name and a bookmark for
+Description.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818365">1.4.6.<span style='font:7.0pt "Times New Roman"'> </span>Q-Pack
+Reports</a></h3>
+
+<p class=MsoNormal><b>Full Details in 38.5.2 Q Pack Reports</b></p>
+
+<p class=MsoNormal>The following Q Packs reports have been added:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>QPR - Q Pack Progress Report</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>QDR – Q Pack Detailed Report</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>QBR – Q Pack Task Breakdown Report</p>
+
+<h3><a name="_Toc506818366">1.4.7.<span style='font:7.0pt "Times New Roman"'> </span>Light
+Theme</a></h3>
+
+<h3 align=center style='margin-left:0cm;text-align:center;text-indent:0cm'><span
+style='font-size:11.0pt;color:windowtext'><img border=0 width=626 height=230
+id="Picture 1" src="1_3_files/image001.png"></span></h3>
+
+<p class=Figure>Figure 1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span>Comparison of the hub2 themes with the previous dark theme on the left
+and the new, lighter theme on the right.</p>
+
+<p class=MsoNormal>Following User feedback, the default theme for hub2 has been
+changed from dark to light. In future versions, Users will be able to select
+which theme they prefer.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818367">1.4.8.<span style='font:7.0pt "Times New Roman"'> </span>Loops
+Added</a></h3>
+
+<p class=MsoNormal><b>Full Details in Section 12.3.7 – Reference Tables: Loop
+&amp; 15.3.1 – Tagged Item</b></p>
+
+<p class=MsoNormal>Loops have been added to the Reference Table and can now be
+linked with Tags and Cables. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818368">1.4.9.<span style='font:7.0pt "Times New Roman"'> </span>Parent
+Tags Added</a></h3>
+
+<p class=MsoNormal><b>Full Details in Section 12.3.9 – Reference Table: Parent
+Tag &amp; 15.3.1 – Tagged Item</b></p>
+
+<p class=MsoNormal>Parent Tags have been added to the Reference Table and can
+now be linked with any Tagged Item. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818369">1.4.10.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>Import Results Column Order</a></h3>
+
+<p class=MsoNormal><b>Full Details in 37.1.8.1.b – Imports and Exports – XLSX
+Results</b></p>
+
+<p class=MsoNormal>The Import Results have been improved to match the column
+ordering and selection of the source Import file. </p>
+
+<p class=MsoNormal>For example, if an Import is performed with the Description
+column as the first column and then the Name column second, the result files
+will also use this order. Similarly, if a column is omitted from an Import file
+it will also be omitted from the result file.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818370">1.4.11.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>Import Result Summary</a></h3>
+
+<p class=MsoNormal><b>Full Details in 37.1.8 – Imports and Exports – Import
+Result Sheets</b></p>
+
+<p class=MsoNormal>The Import Result Summary has been changed so the “To Be
+Added”, “To Be Updated” and “To Be Deleted” rows only appear in a Simulate
+Import, and the “Added”, “Updated” and “Deleted” rows only appear in the Full
+Import.  </p>
+
+<p class=MsoNormal>The Validation Import now has a row called “Validated” to
+make it clear which rows are validated.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818371">1.4.12.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>Total Field for Custom Summary Count Reports</a></h3>
+
+<p class=MsoNormal><b>Full Details in 38.4.1.c – Reporting – Available
+Breakdowns</b></p>
+
+<p class=MsoNormal>When creating Custom Summary Reports previously only
+Completed, Outstanding and Percentage values could be chosen for each Count
+Breakdown. </p>
+
+<p class=MsoNormal>For version 1.3 it is also possible to add a Total column
+which will display the full number of items within that category (for example
+“Total ITRs” within a System).</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818372">1.4.13.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>Bookmark </a>Improvements</h3>
+
+<p class=MsoNormal><b>Full Details in 33.2.1 – Certification Output - Bookmarks</b></p>
+
+<p class=MsoNormal>Changes to bookmarking within hub2 have increased
+compatibility with documents created for older GoTechnology® products.  </p>
+
+<p class=MsoNormal>In addition a new Validate button has been added to the ITR
+View page which, when used, will check the allocated <span
+class=MonospacedChar><span style='font-size:9.5pt;line-height:115%'>dotx</span></span>
+template and provide feedback on the validity of any bookmarks used.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818373"><span lang=FR>1.4.14.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=FR>Future Dates on Validation Imports</span></a></h3>
+
+<p class=MsoNormal><b>Full Details in 37.1.7.2 – Imports and Exports – Date
+Check</b></p>
+
+<p class=MsoNormal>Fields which don’t allow future dates are now validated as
+part of a Validation Import, providing feedback to the User if the date chosen
+is not acceptable.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818374">1.4.15.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>Subset of Users in Authorised Person Popup</a></h3>
+
+<p class=MsoNormal><b>Full Details in 12.3.2.2 – Reference Tables – Authorised
+Persons Permissions</b></p>
+
+<p class=MsoNormal>Filtering has been added to the “User” popup on the
+Authorised Person screen to only show those with access to the selected Level
+C. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818375">1.4.16.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>Add Button in Parent Items View Page</a></h3>
+
+<p class=MsoNormal><b>Full Details in Multiple View Page Sections – Tag, Cable,
+Piping, Procedure, Procedure Skelton</b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='position:absolute;z-index:251661312;left:0px;margin-left:703px;
+margin-top:310px;width:56px;height:24px'><img width=56 height=24
+src="1_3_files/image002.png"></span><span style='position:absolute;z-index:
+251659264;left:0px;margin-left:706px;margin-top:196px;width:56px;height:24px'><img
+width=56 height=24 src="1_3_files/image003.png"></span><img border=0 width=626
+height=460 id="Picture 2" src="1_3_files/image004.jpg"></p>
+
+<p class=Figure>Figure 2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span>Screenshot of the Tag page with “Add Tag ITR” highlighted in <u><span
+style='color:#FFC000'>orange</span></u><span style='color:#FFC000'> </span>and
+“Add Tag PWL” highlighted in <u><span style='color:#7030A0'>purple</span></u>.</p>
+
+<p class=MsoNormal>It's now possible to add “child” items, such as Tag ITR and
+Tag PWLs, via the “parent” page with the addition of an “Add” button above the appropriate
+grid.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818376">1.4.17.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>Generate Buttons on Search Pages</a></h3>
+
+<p class=MsoNormal><b>Full Details in Multi Search Page Sections - Tag ITR, Tag
+PWL, MOC, Handover and Tag Q Step</b></p>
+
+<p class=MsoNormal>Generation of multiple documents from the search page has
+been extended to include Tag Q-Packs, Tag PWLs, MOCs and Handovers.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818377">1.4.18.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>Mock ITRs</a></h3>
+
+<p class=MsoNormal><b>Full Details in Section 23.3.1.2 - ITR: Entity Listing </b></p>
+
+<p class=MsoNormal>A field has been added to the ITR report that allows a ITR
+to be marked as a mock or fake ITR.  These ITRs can then be excluded from
+counts of ITRs on the ITR Search page and the ITR Summary and ITR Detailed
+Report. </p>
+
+<p class=MsoNormal>In a future version, it is anticipated this functionality
+will be extended to allow Mock ITRs to be excluded on other report types.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Hlk506818163"></a><a name="_Toc506818378">1.4.19.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span>Additional Filters on
+Attachment Search</a></h3>
+
+<p class=MsoNormal><b>Full Details in Section 31.1.2.1 – Attachment Search </b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='position:absolute;z-index:251663360;left:0px;margin-left:212px;
+margin-top:172px;width:569px;height:154px'><img width=569 height=154
+src="1_3_files/image005.png"></span><img border=0 width=626 height=462
+id="Picture 5" src="1_3_files/image006.jpg"></p>
+
+<p class=Figure>Figure 3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span>Screenshot of the Attachment page with the new filters highlighted in
+orange.</p>
+
+<p class=MsoNormal>Filters have been added to the Attachment search page to
+allow to search based on the name of the item the Attachment has been
+associated with (for example Tagged Item, MOC, etc.)</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818379">1.4.20.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>Prevent API Fields being used in Entities Names</a></h3>
+
+<p class=MsoNormal><b>Full Details in Section 3.2 – General – Data Rules </b></p>
+
+<p class=MsoNormal>Additional Validation checks have been put in place on all
+“Name” fields (for example Tag Name, or System Name) to prevent them containing
+<span class=MonospacedChar><span style='font-size:9.5pt;line-height:115%'>!</span></span>
+(exclamation mark) or <span class=MonospacedChar><span style='font-size:9.5pt;
+line-height:115%'>;</span></span> (semi-colon) characters. </p>
+
+<p class=MsoNormal>These characters are restricted due to requirements of the
+newly released API.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818380">1.4.21.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>Better Quality Logos</a></h3>
+
+<p class=MsoNormal>The logos that are included in hub2 are now stored in a
+higher resolution.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818381">1.4.22.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>User Name on Import Results Search</a></h3>
+
+<p class=MsoNormal>User Name is now available as a search filter on the Import
+Logs Search page.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818382">1.4.23.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>Company on Digital Document</a></h3>
+
+<p class=MsoNormal>Digital Documents now populate the Authorised Persons Company
+in the Company column automatically.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818383">1.4.24.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>Handover Filters Order</a></h3>
+
+<p class=MsoNormal>The filters on the Handover page have been reordered so that
+items related to the grouping appear at the top of the search page.  For example,
+for the Sub System Discipline Handover, the Sub System and Discipline filters
+will be listed at the top of the page.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name="_Toc506818384">1.4.25.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>Remove Import File Button</a></h3>
+
+<p class=MsoNormal>A “Remove” button has been added to the Import page to allow
+an already selected import file to be removed, without selecting a new file. </p>
+
+</div>
+
+</body>
+
+</html>

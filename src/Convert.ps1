@@ -50,9 +50,14 @@ $title = "<h1><img src=`"qedilogodevice_white.png`"> hub2 Documents</h1>
 					<td><a href=`"v/1_4.pdf`">.pdf</a></td>
 				</tr>
 				<tr>
-					<td><a href=`"v/1_5.htm`">1.5</a></td>
+					<td><a href=`"v/1_5.htm`">1.6</a></td>
 					<td><a href=`"v/1_5.docx`">.docx</a></td>
 					<td><a href=`"v/1_5.pdf`">.pdf</a></td>
+				</tr>
+				<tr>
+					<td><a href=`"v/1_6.htm`">1.5</a></td>
+					<td><a href=`"v/1_6.docx`">.docx</a></td>
+					<td><a href=`"v/1_6.pdf`">.pdf</a></td>
 				</tr>
 			</table>
 		<hr />

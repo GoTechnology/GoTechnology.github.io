@@ -22,7 +22,7 @@ $title = "<h1><img src=`"qedilogodevice_white.png`"> hub2 Documents</h1>
 		<hr />
 		</div>
 		<div id=`"Version`" class=`"center`">
-		    <h2>Version Notes</h2>
+		    <h2>Release Notes</h2>
 			<table>
 				<tr>
 					<th>Version</th>
@@ -50,14 +50,19 @@ $title = "<h1><img src=`"qedilogodevice_white.png`"> hub2 Documents</h1>
 					<td><a href=`"v/1_4.pdf`">.pdf</a></td>
 				</tr>
 				<tr>
-					<td><a href=`"v/1_5.htm`">1.6</a></td>
+					<td><a href=`"v/1_5.htm`">1.5</a></td>
 					<td><a href=`"v/1_5.docx`">.docx</a></td>
 					<td><a href=`"v/1_5.pdf`">.pdf</a></td>
 				</tr>
 				<tr>
-					<td><a href=`"v/1_6.htm`">1.5</a></td>
+					<td><a href=`"v/1_6.htm`">1.6</a></td>
 					<td><a href=`"v/1_6.docx`">.docx</a></td>
 					<td><a href=`"v/1_6.pdf`">.pdf</a></td>
+				</tr>
+				<tr>
+					<td><a href=`"v/1_7.htm`">1.7</a></td>
+					<td><a href=`"v/1_7.docx`">.docx</a></td>
+					<td><a href=`"v/1_7.pdf`">.pdf</a></td>
 				</tr>
 			</table>
 		<hr />

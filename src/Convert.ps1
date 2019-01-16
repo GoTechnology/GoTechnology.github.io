@@ -7,7 +7,7 @@ $header = "<title>GoTechnology hub2 Documents</title>
 <link rel=`"shortcut icon`" href=`"favicon.ico`">"
 
 # title, will be injected before the filter file and shown at the top.
-$title = "<h1><img src=`"wood_logo_white.png`"> GoTechnology hub2 Documents</h1>
+$title = "<h1>GoTechnology hub2 Documents</h1>
 <div>
     <span class=`"red-text left`"><span class=`"bold`">WARNING:</span> This is a living document and subject to continual change.</span>
     <span class=`"right italic`">Last updated " + $updatedOn.ToLongDateString() + " " + $updatedOn.ToLongTimeString() + "</span>

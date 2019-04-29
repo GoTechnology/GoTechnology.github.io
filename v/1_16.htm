@@ -837,7 +837,7 @@ name="_Toc473020538"></a><a name="_Toc517953894">1.<span style='font:7.0pt "Time
 </span>Purpose</a></h2>
 
 <p class=MsoNormal>This document provides a brief overview of the changes made
-between V1.14 and V1.15 of GoTechnology hub2, along with where further details
+between V1.15 and V1.16 of GoTechnology hub2, along with where further details
 of each change can be found within the updated functional specification, in
 addition to a listing of completed bug fixes and known issues.</p>
 
@@ -846,7 +846,7 @@ addition to a listing of completed bug fixes and known issues.</p>
 <h1><a name="_Toc517953898">2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>Fixed Issues</a></h1>
 
-<p class=MsoNormal>The following issues have been fixed in version 1.15 of hub2</p>
+<p class=MsoNormal>The following issues have been fixed in version 1.16 of hub2</p>
 
 <table class=MiscTable border=1 cellspacing=0 cellpadding=0 width=669
  style='width:501.55pt;border-collapse:collapse;border:none'>
@@ -872,246 +872,186 @@ addition to a listing of completed bug fixes and known issues.</p>
   <td width=56 valign=top style='width:42.05pt;border:solid black 1.0pt;
   border-top:none;background:#E1E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>51803</span></p>
+  115%'>53948</span></p>
   </td>
   <td width=170 valign=top style='width:127.55pt;border-top:none;border-left:
   none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
   background:#E1E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>Image Buttons visible even when user doesn’t have access</span></p>
+  115%'>Digital Document Required Tasks are still required after switch to DOTX</span></p>
   </td>
   <td width=443 valign=top style='width:331.95pt;border-top:none;border-left:
   none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
   background:#E1E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>The Add or Replace Image buttons on the Authorised Person page and the
-  Level D Admin page were visible to all users even if they didn’t have
-  permission to change the images.</span></p>
-  <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>Previously clicking these buttons would give a “User not Authorised
-  Message” but now the buttons are hidden for any user without the relevant
-  permissions.</span></p>
+  115%'>If a Digital Document has been set up for any ITR, Handover or PWL then
+  switching to DOTX Generation mode did not remove the requirement to complete
+  the Tasks on the Digital Document.  This has been fixed and now switching to
+  DOTX Generation will not require any Digital Document Tasks to be complete.</span></p>
   </td>
  </tr>
  <tr>
   <td width=56 valign=top style='width:42.05pt;border:solid black 1.0pt;
   border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>54264</span></p>
+  115%'>59071</span></p>
   </td>
   <td width=170 valign=top style='width:127.55pt;border-top:none;border-left:
   none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>Import Error if file has Signed Off By column but not Signed Date
-  column</span></p>
+  115%'>Equipment Type to ITR Conflict</span></p>
   </td>
   <td width=443 valign=top style='width:331.95pt;border-top:none;border-left:
   none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>For Imports with flexible signoffs like Tag ITRs, Work Packs or Punch
-  List Items if you attempted an import with the Authorised Person column but
-  didn’t include the corresponding Date column then the Import failed to work.</span></p>
-  <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>This has now been fixed and you can now include the Authorised Person
-  column without the Date column.</span></p>
+  115%'>When creating the Equipment Type to ITR Matrix it was possible for two
+  items in the Matrix to create duplicate Tag ITRs on a Tag. This would make it
+  impossible to progress or edit these Tag ITRs in any way as they would
+  conflict with each other.  The Unique Constraints on the Equipment Type to
+  ITR has been changed, forcing the user to put a unique Test Reference against
+  conflicting items.</span></p>
   </td>
  </tr>
  <tr>
   <td width=56 valign=top style='width:42.05pt;border:solid black 1.0pt;
   border-top:none;background:#E1E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>55053</span></p>
+  115%'>54481 &amp; 58889</span></p>
   </td>
   <td width=170 valign=top style='width:127.55pt;border-top:none;border-left:
   none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
   background:#E1E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>Tag PWL Import: Cannot have two rows with the same Tag and PWL but
-  different Due Dates</span></p>
+  115%'>New Rows don’t retain size of the previous rows in Bookmarked Tables</span></p>
   </td>
   <td width=443 valign=top style='width:331.95pt;border-top:none;border-left:
   none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
   background:#E1E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>When Importing Tag PWLs, if two or more rows had the same Tag and PWL
-  but different sign off dates only the first row was accepted, with the rest
-  being rejected as duplicates.  </span></p>
-  <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>This has now been fixed and items with the same Tag and PWL are now
-  accepted if the have different Due Dates.</span></p>
+  115%'>When a table was bookmarked on a DOTX Template, new rows added
+  automatically to the table wouldn’t retain the size and formatting of the
+  existing rows.   This has been corrected and now the last row of the table is
+  duplicated for new rows.</span></p>
   </td>
  </tr>
  <tr>
   <td width=56 valign=top style='width:42.05pt;border:solid black 1.0pt;
   border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>55105</span></p>
+  115%'>51132</span></p>
   </td>
   <td width=170 valign=top style='width:127.55pt;border-top:none;border-left:
   none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>Procedure View page does not display “Assigned To” Authorised Person</span></p>
+  115%'>Duplicate Table Bookmarks cause DOTX Generation to fail</span></p>
   </td>
   <td width=443 valign=top style='width:331.95pt;border-top:none;border-left:
   none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>The Assigned To Field was not displayed on the Procedure View Page.</span></p>
-  <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>The page has been updated to correctly display this field.</span></p>
+  115%'>When using Table Bookmarks each table must be given a unique name
+  within the bookmarks.  If two or more bookmarks are given the same table
+  name, then the DOTX Template would not be able to generate.  This behaviour
+  has been corrected with the Document now able to be generated but conflicted
+  tables will not be populated.</span></p>
   </td>
  </tr>
  <tr>
   <td width=56 valign=top style='width:42.05pt;border:solid black 1.0pt;
   border-top:none;background:#E1E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>58578</span></p>
+  115%'>54937</span></p>
   </td>
   <td width=170 valign=top style='width:127.55pt;border-top:none;border-left:
   none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
   background:#E1E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>System and Sub System Discipline Reports crash if Handover Fields are
-  selected.</span></p>
+  115%'>Tag Procedure Report Filters are case sensitive</span></p>
   </td>
   <td width=443 valign=top style='width:331.95pt;border-top:none;border-left:
   none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
   background:#E1E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>When Creating a Summary Report of Type PLI, MOC or Tag ITR the Handover
-  Fields would appear in the list of columns.  Selecting these fields would
-  prevent the report from being created as these columns should only appear
-  when selecting Handover Summary Reports.</span></p>
-  <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>These columns have now been removed from the PLI, MOC and Tag ITR
-  Summary Reports.</span></p>
+  115%'>When the Tag Fields were added to any Custom Detailed Procedure Report
+  this would cause all the Filters to become case sensitive.  This behaviour
+  has been corrected and now like all search filters the Procedure Report will
+  be case insensitive.  </span></p>
   </td>
  </tr>
  <tr>
   <td width=56 valign=top style='width:42.05pt;border:solid black 1.0pt;
   border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>58618</span></p>
+  115%'>55071</span></p>
   </td>
   <td width=170 valign=top style='width:127.55pt;border-top:none;border-left:
   none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>Import E-Mails were disabled based on a Project Feature </span></p>
+  115%'>Document Type changed if Save was clicked twice on Attachment Edit Page</span></p>
   </td>
   <td width=443 valign=top style='width:331.95pt;border-top:none;border-left:
   none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>The Import E-Mails received when an Import is completed would stop
-  being sent if the “Assignment Notifications” setting is turned off. </span></p>
-  <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>This setting is meant to only prevent notifications from being sent
-  when an item is assigned to a user but was also preventing the Import Emails
-  being sent.</span></p>
-  <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>This behaviour has now been corrected and Import Result E-Mails will be
-  sent regardless of the Notification Setting. </span></p>
+  115%'>If the user clicked Save twice on the Attachment Edit page the
+  Attachment Type displayed on the page would change to an incorrect Document
+  Type.  No data would be affected but this was confusing.  This has been fixed
+  and the correct Document Type is always displayed.</span></p>
   </td>
  </tr>
  <tr>
   <td width=56 valign=top style='width:42.05pt;border:solid black 1.0pt;
   border-top:none;background:#E1E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>58746</span></p>
+  115%'>52510</span></p>
   </td>
   <td width=170 valign=top style='width:127.55pt;border-top:none;border-left:
   none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
   background:#E1E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>Incorrect Validation for Barcode Bookmark</span></p>
+  115%'>Errors occur when Custom Field matches the name of an existing field on
+  the Entity.</span></p>
   </td>
   <td width=443 valign=top style='width:331.95pt;border-top:none;border-left:
   none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
   background:#E1E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>When Validating a Barcode Bookmark the Bookmark Validation Popup would
-  show “Valid – NULL”.  This has been corrected to just read “Valid”.</span></p>
+  115%'>When creating Custom Fields, the add page would allow the custom field
+  to be named the same as an existing field i.e. You could name a field on a
+  Tag “Description”.  This would cause a conflict with the existing Description
+  field and prevent some functionality such as Imports and Exports from working
+  correctly.</span></p>
+  <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
+  115%'>Additional Validation has now been added to the Custom Fields page to
+  prevent fields with the same name as an existing field being added.</span></p>
   </td>
  </tr>
  <tr>
   <td width=56 valign=top style='width:42.05pt;border:solid black 1.0pt;
   border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>58784</span></p>
+  115%'>59676</span></p>
   </td>
   <td width=170 valign=top style='width:127.55pt;border-top:none;border-left:
   none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>Multiple Projects with the same Custom Fields could prevent Saving</span></p>
+  115%'>Work Pack Approval is missing from the Authorised Person Import and
+  Export</span></p>
   </td>
   <td width=443 valign=top style='width:331.95pt;border-top:none;border-left:
   none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>If there were multiple Levels/Projects each with the same custom
-  field’s setup for the same Entity (i.e. Test Pack) then it could prevent
-  Saving when editing the custom fields on the entity.</span></p>
+  115%'>The Work Pack Approval option for Authorised Person was not present on
+  the Authorised Person Export and could not be Imported.</span></p>
   <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>Example – If we had two Projects with the Custom Field “Zone” on Test
-  Packs, then when we updated the values of the Test Pack the Test Pack would
-  fail to save.</span></p>
-  <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>This has now been fixed and Custom Fields can have the same name across
-  multiple Levels/Projects.</span></p>
-  </td>
- </tr>
- <tr>
-  <td width=56 valign=top style='width:42.05pt;border:solid black 1.0pt;
-  border-top:none;background:#E1E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>58862</span></p>
-  </td>
-  <td width=170 valign=top style='width:127.55pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  background:#E1E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>Report Error when running Reports from large Projects</span></p>
-  </td>
-  <td width=443 valign=top style='width:331.95pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  background:#E1E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>In Projects with large number of Tag ITRs split across multiple
-  Projects, the reports sometimes ran into a timeout error, and would not be
-  displayed to the users.</span></p>
-  <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>The reports have now been optimised to prevent this behaviour and
-  should run successfully </span></p>
-  </td>
- </tr>
- <tr>
-  <td width=56 valign=top style='width:42.05pt;border:solid black 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>59042</span></p>
-  </td>
-  <td width=170 valign=top style='width:127.55pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>Summary Reports – Discipline Breakdown don’t save if Discipline over 30
-  characters</span></p>
-  </td>
-  <td width=443 valign=top style='width:331.95pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt'>
-  <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>When a user makes a Summary Report with a Discipline Breakdown, if any
-  of the Disciplines Descriptions are over 30 characters long then the report
-  couldn’t be saved.</span></p>
-  <p class=MsoNormal align=left style='text-align:left'><span style='line-height:
-  115%'>This has now been fixed with the Discipline Names being used instead and
-  the Summary Reports can now be successfully saved.</span></p>
+  115%'>This has been fixed and the field is now available on both the Import
+  and Export</span></p>
   </td>
  </tr>
 </table>
@@ -1134,289 +1074,195 @@ font-family:"Segoe UI",sans-serif;layout-grid-mode:line'>&nbsp;</span></b></p>
 </span>Features</h1>
 
 <p class=MsoNormal><a name="_Toc517953902">The following functionality has been
-added in v1.15:</a></p>
+added in v1.16:</a></p>
 
-<p class=MsoNormal>Functional:</p>
+<p class=MsoNormal>Functional:<a name="_Hlk520127587"></a></p>
 
 <p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>On Screen Import &amp; Assignment Notifications</p>
+style='font-family:Symbol;color:#884C91'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>New fields on Work Pack: Document Reference and Detailed
+Description</p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Handover Reports: Additional Groupings</p>
+style='font-family:Symbol;color:#884C91'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>New field on Job Card: Detailed Description</p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Multi-Factor Authentication</p>
+style='font-family:Symbol;color:#884C91'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Notifications in menu bar</p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Work Pack Generation Ordering enhancements</p>
+style='font-family:Symbol;color:#884C91'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Download dashboard charts</p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Improved Import Result Email</p>
+style='font-family:Symbol;color:#884C91'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Themes</p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Work Pack Generation based on Locked Status</p>
+style='font-family:Symbol;color:#884C91'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Multi Tag ITR Barcodes</p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Job Card field on As Built Drawings</p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
-.0001pt;text-indent:-18.0pt;line-height:normal'><span style='font-size:12.0pt;
-font-family:Symbol;color:#884C91;layout-grid-mode:line'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Job Card Authorised Person Permissions</p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
-.0001pt;text-indent:-18.0pt;line-height:normal'><span style='font-size:12.0pt;
-font-family:Symbol;color:#884C91;layout-grid-mode:line'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Single Drawing Attachment<a name="_Hlk520127587"></a></p>
+style='font-family:Symbol;color:#884C91'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Additional Details on Delete Check</p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Digital Document included in Work Pack Generation</p>
+style='font-family:Symbol;color:#884C91'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Extended valid Date Range</p>
 
-<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-indent:-18.0pt;line-height:normal'><span style='font-size:12.0pt;
-font-family:Symbol;color:#884C91;layout-grid-mode:line'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span>Tag ITR/PWL Auto Allocation Messages</p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol;color:#884C91'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Bookmarks for levels</p>
 
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-normal'><b><span style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
-color:#884C91;layout-grid-mode:line'>&nbsp;</span></b></p>
+<p class=MsoListParagraphCxSpLast><b><span style='font-size:12.0pt;line-height:
+115%;font-family:"Segoe UI",sans-serif;color:#884C91;layout-grid-mode:line'>&nbsp;</span></b></p>
 
-<h2>4.1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>On
-Screen Import &amp; Assignment Notifications </h2>
+<span style='font-size:11.0pt;font-family:"Calibri",sans-serif'><br clear=all
+style='page-break-before:always'>
+</span>
 
-<p class=MsoNormal><b>For more detail see Section 37.6 and Section 41.1.12 of
-the v1.15 Functional Specification</b></p>
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal'><b><span style='font-size:12.0pt;
+font-family:"Segoe UI",sans-serif;color:#884C91;layout-grid-mode:line'>&nbsp;</span></b></p>
 
-<p class=MsoNormal>When an import completes the user will now receive an
-on-screen notification, containing some details about the import and a link to
-the import results.</p>
+<h2>4.1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>New
+Fields on Work Pack</h2>
 
-<p class=MsoNormal align=left style='text-align:left'><img border=0 width=569
-height=286 id="Picture 2" src="1_15_files/image001.jpg"></p>
+<p class=MsoNormal><b>For more detail see Section 24.3.9.1 Work Pack Entity of
+the v1.16 Functional Specification</b></p>
+
+<p class=MsoNormal align=left style='text-align:left;page-break-after:avoid'><img
+border=0 width=630 height=278 id="Picture 1" src="1_16_files/image001.png"></p>
 
 <p class=Figure align=left style='text-align:left'>Figure 1.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>Screenshot of the Import Page with the new alert shown in the top right
-corner</p>
+</span>Screenshot of the Work Pack View Page with the new fields highlighted</p>
 
-<p class=MsoNormal>On-screen notifications will also appear when a user is
-assigned an item, such as a Tag ITR or Work Pack.</p>
+<p class=MsoNormal>Document Reference and Detailed Description have been added
+to Work Packs.  Document Reference is limited to 50 characters whilst Detailed
+Description is limited to 4000 characters in length.</p>
 
-<p class=MsoNormal>On-screen notifications only appear if the user is signed in
-at the time and are in addition to the existing email notifications.<br
-clear=all style='page-break-before:always'>
-</p>
+<p class=MsoNormal>&nbsp;</p>
 
-<h2>4.2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Handover
-Reports: Additional Groupings </h2>
+<h2>4.2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>New
+Field on Job Card</h2>
 
-<p class=MsoNormal><b>For more detail see Section 42.4.2 of the v1.15
-Functional Specification</b></p>
+<p class=MsoNormal><b>For more detail see Section 24.3.1.1 Job Card Entity of
+the v1.16 Functional Specification</b></p>
 
-<p class=MsoNormal><b><img border=0 width=645 height=245 id="Picture 6"
-src="1_15_files/image002.png"></b></p>
+<p class=MsoNormal align=left style='text-align:left'><b><img border=0
+width=614 height=306 id="Picture 6" src="1_16_files/image002.png"></b></p>
 
 <p class=Figure align=left style='text-align:left'>Figure 2.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>Screenshot of the Summary Report Creation Screen with Handover Selected
-and the new Groupings highlighted</p>
+</span>Screenshot of the Job Card View Screen with the new Detailed Description
+field highlighted</p>
 
-<p class=MsoNormal>Handover Summary reports may now be grouped by Area, Module,
-System Discipline and Sub System Discipline.  For System and Sub System
-Discipline Handover reports, there is a setting called ‘Show rows with Zero
-values”. When enabled, the report will list every possible combination of
-System / Sub System and Discipline available even when the row has no values.
-When disabled, the report will only show rows which contain values. </p>
+<p class=MsoNormal>Detailed Description has been added to Job Cards.  It is
+limited to 4000 characters in length.</p>
 
-<span style='font-size:11.0pt;font-family:"Calibri",sans-serif'><br clear=all
-style='page-break-before:always'>
-</span>
+<h2>4.3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Notifications
+in Menu Bar</h2>
 
-<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:left;line-height:normal'><b><span style='font-size:12.0pt;
-font-family:"Segoe UI",sans-serif;color:#884C91;layout-grid-mode:line'>&nbsp;</span></b></p>
-
-<h2>4.3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Multi-Factor
-Authentication </h2>
-
-<p class=MsoNormal><b>For more detail see Section 4.6 of the ID Server
+<p class=MsoNormal><b>For more detail see Section 17 Notifications of the v1.16
 Functional Specification</b></p>
 
-<p class=MsoNormal align=left style='text-align:left;page-break-after:avoid'><img
-border=0 width=404 height=217 id="Picture 3" src="1_15_files/image003.png"></p>
+<p class=MsoNormal><img border=0 width=645 height=332 id="Picture 8"
+src="1_16_files/image003.png"></p>
 
 <p class=Figure align=left style='text-align:left'>Figure 3.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>Screenshot of the Two Factor Authentication Code Screen</p>
+</span>Screenshot showing the new notification Panel</p>
 
-<p class=MsoNormal style='page-break-after:avoid'>The Login system for hub2 has
-been extended to allow the use of two-factor authentication.  This allows user
-to set there account to require a 2<sup>nd</sup> form of identify check to
-login to hub2.  For v1.15 only Microsoft Authenticator has been enabled which
-allows an app to be downloaded from the App Store and configured when the user
-first logs in after the Two Factor Authentication has been enabled. </p>
+<p class=MsoNormal>Notifications for imports and item assignments now appear in
+the menu bar, in addition to the existing email and on-screen notifications. </p>
+
+<p class=MsoNormal>Notifications can be removed from the panel by clicking the
+“Clear All” button, or they may be removed individually. Notifications will be
+removed automatically once they are two weeks old.</p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal'>&nbsp;</p>
+
+<h2>4.4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Download
+Dashboard Charts</h2>
+
+<p class=MsoNormal><b>For more detail see section 7.2 Home Screen Details of
+the v1.16 Functional Specification</b></p>
 
 <p class=MsoNormal align=left style='text-align:left;page-break-after:avoid'><img
-border=0 width=518 height=240 id="Picture 196" src="1_15_files/image004.png"></p>
+border=0 width=532 height=189 id="Picture 5" src="1_16_files/image004.png"></p>
 
 <p class=Figure align=left style='text-align:left'>Figure 4.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>Screenshot of the Configure Authenticator App Page</p>
+</span> Screenshot showing the new download button</p>
 
-<p class=MsoNormal>&nbsp;</p>
+<p class=MsoNormal>The onscreen arc and Planned vs Actual Progress charts can
+now be downloaded into a pdf file.  These can be downloaded via the Download
+button on the top right of the chart.  The PDF Files will have a similar layout
+to our existing reports with the Report Name, Level E Name, and Logos displayed
+at the top and footer showing the page details.</p>
 
-<p class=MsoNormal>The configuration screen contains instructions which help
-the user find a suitable app to use for authentication, either by scanning a QR
-Code on-screen, or by manually entering a code if the device does not have a
-camera. Once the account is added to the app, the user must enter the current
-code to verify that setup is complete.</p>
-
-<p class=MsoNormal>The authenticator app will generate a six-digit code which
-changes every 30 seconds.</p>
-
-<p class=MsoNormal style='page-break-after:avoid'>By requiring both factors to
-authenticate, the risk associated with a breach of the user’s password is
-significantly reduced.   To request 2FA be enabled for an account please
-contact <span class=MsoHyperlink><a
-href="mailto:GoTechnology.Support@woodplc.com">GoTechnology.Support@woodplc.com</a></span>
-<br clear=all style='page-break-before:always'>
-</p>
-
-<h2>4.4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Work
-Pack Generation Ordering enhancements </h2>
-
-<p class=MsoNormal><b>For more detail see Section 23.2.5 of the v1.15
-Functional Specification</b></p>
-
-<p class=MsoNormal align=left style='text-align:left'><b><img border=0
-width=515 height=252 id="Picture 7" src="1_15_files/image005.png"></b></p>
+<p class=MsoNormal align=left style='text-align:left;page-break-after:avoid'><img
+border=0 width=508 height=361 id="Picture 7" src="1_16_files/image005.png"></p>
 
 <p class=Figure align=left style='text-align:left'>Figure 5.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>Work Pack Attachment Reordering Screen</p>
+</span> Screenshot of downloaded Tag ITR charts</p>
 
-<p class=MsoNormal>The ordering of all attachments to be included in a Work
-Pack can now be configured from a single screen. The new re-ordering screen
-will contain all pdf attachments for a Work Pack, any associated Job Cards and
-any of the Job Card’s associated Drawings.</p>
+<h2>4.5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Themes</h2>
+
+<p class=MsoNormal><b>For more detail see Section 5.3 – Colours &amp; Themes of
+the v1.16 Functional Specification</b></p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<h2>4.5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Improved
-Import Result Email</h2>
-
-<p class=MsoNormal><b>For more detail see Section 41.4.15 of the v1.15
-Functional Specification</b></p>
-
-<p class=MsoNormal align=left style='text-align:left'><img border=0 width=309
-height=252 id="Picture 12" src="1_15_files/image006.jpg"></p>
+<p class=MsoNormal align=left style='text-align:left'><img border=0 width=177
+height=159 id="Picture 4" src="1_16_files/image006.png"></p>
 
 <p class=Figure align=left style='text-align:left'>Figure 6.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>Example of an Import Result Email</p>
+</span>Screenshot of the New User Settings Menu under the Name</p>
 
-<p class=MsoNormal align=center style='text-align:center'>&nbsp;</p>
+<p class=MsoNormal>The ability to change the theme of hub2 has been added.  A
+user can now go to their Settings to change between one of three available
+themes:</p>
 
-<p class=MsoNormal>The import result email has an improved subject line and now
-contains additional information to identify the import it refers to. This
-includes the date and time the import was queued at and a unique number for the
-import. This number is also displayed in the on-screen notification when the
-import is queued.</p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Light – The Standard Blue/White Theme that has been available
+since v1.5</p>
 
-<p class=MsoNormal>&nbsp;</p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Dark – A New Dark Blue Theme which changes the background to a
+dark grey</p>
 
-<h2>4.6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Work
-Pack Generation based on Locked Status </h2>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Wood Purple – A Light Theme Based on the Wood Corporate Purple</p>
 
-<p class=MsoNormal><b>For more detail see Section 23.2.6 of the v1.15
-Functional Specification</b></p>
-
-<p class=MsoNormal><b><img border=0 width=645 height=258 id="Picture 5"
-src="1_15_files/image007.png"></b></p>
+<p class=MsoNormal><img border=0 width=645 height=121 id="Picture 2"
+src="1_16_files/image007.png"></p>
 
 <p class=Figure align=left style='text-align:left'>Figure 7.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>Screenshot of the Work Pack View page with the Generate Button
-Highlighted on a Locked Work Pack</p>
+</span>Screenshots showing the Various Themes</p>
 
-<p class=MsoNormal>Work Packs can now only be generated when the Work Pack has
-a Completion Status which locks the Work Pack set. The Work Packs Sign Offs no
-longer affect whether a Work Pack can be generated.</p>
+<h2>&nbsp;</h2>
 
-<p class=MsoNormal>&nbsp;</p>
+<h2>4.6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Multi
+Tag ITR Barcodes</h2>
 
-<h2>4.7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Job
-Card field on As Built Drawings </h2>
+<p class=MsoNormal><b>For more detail see Section 36.3.1.2 – Multi Tag ITR
+Bookmarks of the v1.16 Functional Specification</b></p>
 
-<p class=MsoNormal><b>For more detail see Section 24.3.3.2 of the v1.15
-Functional Specification</b></p>
-
-<p class=MsoNormal align=left style='text-align:left'><b><img border=0
-width=575 height=254 id="Picture 4" src="1_15_files/image008.png"></b></p>
-
-<p class=Figure align=left style='text-align:left'>Figure 8.<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>Screenshot of the As Built Drawing Edit Screen with new Job Card field highlighted</p>
-
-<p class=MsoNormal>As Built Drawings now have a Job Card field, which can be
-set on screen, via import and via the API.</p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:115%;
-font-family:"Segoe UI",sans-serif;color:#884C91;layout-grid-mode:line'>&nbsp;</span></b></p>
-
-<h2>4.8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Job
-Card Authorised Person Permissions </h2>
-
-<p class=MsoNormal><b>For more detail see Section 13.3.2.1 and 23.4 of the
-v1.15 Functional Specification</b></p>
-
-<p class=MsoNormal>Authorised Persons now have a “Sign Off Job Cards” permission.
-The user will require this permission to Sign off, Accept and Assign Job Cards.</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<h2>4.9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span> Single
-Drawing Attachment </h2>
-
-<p class=MsoNormal><b>For more detail see Section 24.4.2 and 33.5.4 of the
-v1.15 Functional Specification</b></p>
-
-<p class=MsoNormal>Uploading Attachments to Drawings can now be restricted to one
-Attachment per Drawing via the Level C “Single Drawing Attachments” feature.
-The Attachment Grid, on the Drawing View Page, now displays a “Replace
-Attachment” button in place of the “Upload New” button, when one attachment
-already exists on a Drawing. </p>
-
-<p class=MsoNormal><img border=0 width=644 height=131 id="Picture 1"
-src="1_15_files/image009.jpg"></p>
-
-<p class=Figure align=left style='text-align:left'>Figure 9.<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>Replace Attachment Button on Drawing Attachments Grid</p>
-
-<p class=MsoNormal>The “Replace Attachment” button asks the User to confirm
-deleting the current Attachment, then opens the File Selector allowing the user
-to select one file. When trying to add an attachment via the Upload Attachments
-page, an Error message notifies the User if the Drawing selected already has an
-Attachment.</p>
-
-<p class=MsoNormal><img border=0 width=644 height=260 id="Picture 8"
-src="1_15_files/image010.png"></p>
-
-<p class=Figure align=left style='text-align:left'>Figure 10.<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>Multiple Attachments Error on Upload Attachments Page</p>
+<p class=MsoNormal>When generating a Multi Tag ITR previously no barcode would
+be generated on the DOTX Templates.  The Barcoding has now been extended to
+correctly work with Multi Tag ITRs and generate these documents will produce a
+Barcode which can then be used on the “Upload Barcode Document” screen to
+upload the single document to the correct locations.</p>
 
 <span style='font-size:11.0pt;font-family:"Calibri",sans-serif'><br clear=all
 style='page-break-before:always'>
@@ -1426,27 +1272,52 @@ style='page-break-before:always'>
 text-align:left;line-height:normal'><b><span style='font-size:12.0pt;
 font-family:"Segoe UI",sans-serif;color:#884C91;layout-grid-mode:line'>&nbsp;</span></b></p>
 
-<h2>4.10.<span style='font:7.0pt "Times New Roman"'> </span>Digital Document
-included in Work Pack Generation </h2>
+<h2>4.7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Additional
+Details on Delete</h2>
 
-<p class=MsoNormal><b>For more detail see Section 23.2.6 of the v1.15
-Functional Specification</b></p>
+<p class=MsoNormal><b>For more detail see Section 8.2.1.3.6 – Delete Check of
+the v1.16 Functional Specification</b></p>
 
-<p class=MsoNormal>If the Work Pack has a Work Pack Type which has a Digital
-Document, then there will be the appropriate Digital Document for the Work Pack
-generated and included at the end of the Generated Work Pack PDF file.</p>
+<p class=MsoNormal align=left style='text-align:left'><b><img border=0
+width=484 height=199 id="Picture 3" src="1_16_files/image008.png"></b></p>
 
-<h2 style='margin-left:0cm;text-indent:0cm'>&nbsp;</h2>
+<p class=Figure align=left style='text-align:left'>Figure 8.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Screenshot of the Delete Dialogue with the field name in brackets</p>
 
-<h2>4.11.<span style='font:7.0pt "Times New Roman"'> </span>Tag ITR/PWL Auto
-Allocation Messages</h2>
+<p class=MsoNormal>Tables like Authorised Person can be associated with several
+different tables (Tag ITR, Tag PWL, MOCs, etc.) and several fields on that same
+table (Assigned To and Completed By).  This can make it harder to track down
+the records blocking these tables being deleted as the user will have to search
+against multiple fields. </p>
 
-<p class=MsoNormal>The Tag ITR/PWL Auto Allocation Messages have been improved
-so that if there are no matching rows for the current Equipment Type then the
-message next to the Tag ITRs says there is no Matching Field in the Tag ITR/PWL
-Matrix.</p>
+<p class=MsoNormal>To make this easier the Delete dialogue information has been
+extended to tell the user which table the delete conflict is associated with as
+well as the field.  </p>
+
+<p class=MsoNormal>For field names which are the same as the table name (i.e.
+the Work Pack field on Job Cards is just called Work Pack) there will be no
+additional information.</p>
 
 <p class=MsoNormal>&nbsp;</p>
+
+<h2>4.8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Extended
+valid Date Range</h2>
+
+<p class=MsoNormal><b>For more detail see Section 11.3 – Date Validation of the
+v1.16 Functional Specification</b></p>
+
+<p class=MsoNormal>The Date Range allowed in hub2 has been extended. 
+Previously all dates had to be after 01 Jan 2000, this has now been extended
+and dates are allowed if they are after 01 Jan 1950.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>4.9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Bookmarks
+for levels</h2>
+
+<p class=MsoNormal>When Creating a DOTX Template it is now possible to include
+the Level Bookmarks to include the names of the current Levels.  </p>
 
 </div>
 

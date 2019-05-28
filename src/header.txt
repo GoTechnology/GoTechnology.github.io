@@ -1,0 +1,4 @@
+<title>GoTechnology hub2 Documents</title>
+<link rel="stylesheet" href="site.css"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico">

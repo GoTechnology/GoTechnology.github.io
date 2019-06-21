@@ -44,6 +44,16 @@
                             </tr>
                         </thead>
 			<tr>
+                            <td><a href="v/1_18.htm">1.18</a></td>
+                            <td><a href="v/1_18.docx">.docx</a></td>
+                            <td><a href="v/1_18.pdf">.pdf</a></td>
+                        </tr>
+			<tr>
+                            <td><a href="v/1_17.htm">1.17</a></td>
+                            <td><a href="v/1_17.docx">.docx</a></td>
+                            <td><a href="v/1_17.pdf">.pdf</a></td>
+                        </tr>
+			<tr>
                             <td><a href="v/1_16.htm">1.16</a></td>
                             <td><a href="v/1_16.docx">.docx</a></td>
                             <td><a href="v/1_16.pdf">.pdf</a></td>

@@ -44,6 +44,15 @@
                             </tr>
                         </thead>
 			<tr>
+                            <td><a href="v/1_21.htm">1.21</a></td>
+                            <td><a href="v/1_21.docx">.docx</a></td>
+                            <td><a href="v/1_21.pdf">.pdf</a></td>
+                        </tr>
+			<tr>
+                            <td>1.20</td>
+                            <td>Maintenance Release</td>
+                        </tr>
+			<tr>
                             <td><a href="v/1_19.htm">1.19</a></td>
                             <td><a href="v/1_19.docx">.docx</a></td>
                             <td><a href="v/1_19.pdf">.pdf</a></td>

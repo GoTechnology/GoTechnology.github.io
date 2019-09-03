@@ -22,14 +22,15 @@
             </h2>
             <hr />
         </div>
-        <div id="API" class="text-center">
+        <div id="SIS" class="text-center">
             <h2>
                 <a href="sis/">Solution Information Sheet</a>
             </h2>
             <hr />
         </div>
-        <div id="Version" class="center">
+        <div id="Version" class="text-center">
             <h2 class="text-center">Release Notes</h2>
+	    <small class="text-center">* = Optimisation Release (no new features)</small>
             <div class="row">
                 <div class="col-4">
                     &nbsp;
@@ -49,8 +50,9 @@
                             <td><a href="v/1_21.pdf">.pdf</a></td>
                         </tr>
 			<tr>
-                            <td>1.20</td>
-                            <td>Maintenance Release</td>
+                            <td>1.20*</td>
+                            <td>n/a</td>
+			    <td>n/a</td>	
                         </tr>
 			<tr>
                             <td><a href="v/1_19.htm">1.19</a></td>
@@ -153,5 +155,5 @@
             </div>
             <hr />
         </div>
-        <div id="Issue" class="center">
+        <div id="Issue" class="text-center">
             <h2 class="text-center">Known Issues</h2>

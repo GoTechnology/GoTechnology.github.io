@@ -28,6 +28,12 @@
             </h2>
             <hr />
         </div>
+        <div id="EL" class="text-center">
+            <h2>
+                <a href="el/">Guide to User Levels and Training Courses</a>
+            </h2>
+            <hr />
+        </div>
         <div id="Version" class="text-center">
             <h2 class="text-center">Release Notes</h2>
 	    <small class="text-center">* = Optimisation Release (no new features)</small>

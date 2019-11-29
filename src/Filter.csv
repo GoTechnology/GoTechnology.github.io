@@ -33,5 +33,5 @@
 59990,"Unable to Delete Level C After Enabling Clean Energy","Backlog"
 60350,"Digital Document Tables generating empty rows","Backlog"
 60916,"Completions Grid Level E Handovers are not shown unless they have been viewed first","Backlog"
-61858,"Digital Document - Blank Bookmark Fields Not Validated Upon JSON Upload","1.23"
 61859,"Digital Document - Manual Edit of JSON File Not Validated for Table Column Number","Backlog"
+63600,"Digital Document - IE11 ONLY - ""Unexpected end of input"" error occurred when accessing a Digital Document AddEdit page","Backlog"

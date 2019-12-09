@@ -34,6 +34,12 @@
             </h2>
             <hr />
         </div>
+        <div id="PROC" class="text-center">
+            <h2>
+                <a href="process/">GoTechnology Process Manual</a>
+            </h2>
+            <hr />
+        </div>
         <div id="Version" class="text-center">
             <h2 class="text-center">Release Notes</h2>
 	    <small class="text-center">* = Optimisation Release (no new features)</small>

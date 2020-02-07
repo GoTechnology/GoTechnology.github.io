@@ -1,0 +1,1259 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>v1.08 - GoTechnology hub2 Release Notes</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:DaxlinePro-Bold;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:1.0cm;
+	text-indent:-1.0cm;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	layout-grid-mode:line;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:1.0cm;
+	text-indent:-1.0cm;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	color:#884C91;
+	layout-grid-mode:line;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:1.0cm;
+	text-indent:-1.0cm;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	color:#2DBDB6;
+	layout-grid-mode:line;
+	font-weight:bold;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-indent:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;
+	color:black;
+	font-weight:bold;}
+h5
+	{mso-style-link:"Heading 5 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:1.0cm;
+	text-indent:-1.0cm;
+	line-height:150%;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;
+	color:#88C540;
+	font-weight:normal;
+	font-style:italic;}
+h6
+	{mso-style-link:"Heading 6 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:57.6pt;
+	text-align:justify;
+	text-indent:-57.6pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;
+	font-weight:bold;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Heading 7 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:64.8pt;
+	text-align:justify;
+	text-indent:-64.8pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Heading 8 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:72.0pt;
+	text-align:justify;
+	text-indent:-72.0pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Segoe UI",sans-serif;
+	font-style:italic;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Heading 9 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:79.2pt;
+	text-align:justify;
+	text-indent:-79.2pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Cambria",serif;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:9.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;
+	text-transform:uppercase;
+	font-weight:bold;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:11.05pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;
+	font-variant:small-caps;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:93.55pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-39.7pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;
+	font-style:italic;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:33.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:115%;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:44.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:115%;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:55.0pt;
+	line-height:107%;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:66.0pt;
+	line-height:107%;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:77.0pt;
+	line-height:107%;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:88.0pt;
+	line-height:107%;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-link:"Footnote Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"Comment Text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#002D62;
+	font-weight:bold;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;
+	color:#233845;
+	font-style:italic;}
+p.MsoTof, li.MsoTof, div.MsoTof
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;
+	font-weight:bold;}
+span.MsoFootnoteReference
+	{vertical-align:super;}
+span.MsoEndnoteReference
+	{vertical-align:super;}
+p.MsoEndnoteText, li.MsoEndnoteText, div.MsoEndnoteText
+	{mso-style-link:"Endnote Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-link:"Body Text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;
+	color:black;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#2DBDB6;
+	text-decoration:underline;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-link:"Document Map Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:8.0pt;
+	font-family:"Tahoma",sans-serif;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"Comment Subject Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:8.0pt;
+	font-family:"Tahoma",sans-serif;}
+span.MsoPlaceholderText
+	{color:gray;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoRMPane, li.MsoRMPane, div.MsoRMPane
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;}
+span.MsoBookTitle
+	{font-variant:small-caps;
+	letter-spacing:.25pt;
+	font-weight:bold;}
+p.MsoBibliography, li.MsoBibliography, div.MsoBibliography
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:1.0cm;
+	text-indent:-1.0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	color:#365F91;
+	layout-grid-mode:line;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Segoe UI",sans-serif;
+	layout-grid-mode:both;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Segoe UI",sans-serif;
+	color:#884C91;
+	layout-grid-mode:both;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Segoe UI",sans-serif;
+	color:#2DBDB6;
+	layout-grid-mode:both;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Times New Roman",serif;
+	color:black;
+	font-weight:bold;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-link:"Heading 5";
+	font-family:"Times New Roman",serif;
+	color:#88C540;
+	font-style:italic;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-link:"Heading 6";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-link:"Heading 7";
+	font-family:"Times New Roman",serif;}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-link:"Heading 8";
+	font-family:"Times New Roman",serif;
+	font-style:italic;}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	mso-style-link:"Heading 9";
+	font-family:"Cambria",serif;}
+p.Footerbox1, li.Footerbox1, div.Footerbox1
+	{mso-style-name:"Footer box 1";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;
+	color:white;
+	font-weight:bold;}
+p.Footerbox2, li.Footerbox2, div.Footerbox2
+	{mso-style-name:"Footer box 2";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;
+	color:white;
+	font-weight:bold;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma",sans-serif;}
+p.Footerboxcontent1, li.Footerboxcontent1, div.Footerboxcontent1
+	{mso-style-name:"Footer box content 1";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;
+	color:#002060;
+	font-weight:bold;}
+p.Headermain, li.Headermain, div.Headermain
+	{mso-style-name:"Header main";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Book Antiqua",serif;
+	color:#002060;
+	font-weight:bold;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;
+	color:#002D62;
+	font-weight:bold;}
+p.Footerboxcontent2, li.Footerboxcontent2, div.Footerboxcontent2
+	{mso-style-name:"Footer box content 2";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;
+	color:#002060;
+	font-weight:bold;}
+span.DocumentMapChar
+	{mso-style-name:"Document Map Char";
+	mso-style-link:"Document Map";
+	font-family:"Tahoma",sans-serif;}
+p.DocumentTitle, li.DocumentTitle, div.DocumentTitle
+	{mso-style-name:"Document Title";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:115%;
+	font-size:24.0pt;
+	font-family:"Segoe UI",sans-serif;
+	font-variant:small-caps;
+	color:white;
+	font-weight:bold;}
+p.Documentnumber, li.Documentnumber, div.Documentnumber
+	{mso-style-name:"Document number";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:115%;
+	font-size:16.0pt;
+	font-family:"Segoe UI",sans-serif;
+	color:#002D62;
+	font-weight:bold;}
+p.TableHeader, li.TableHeader, div.TableHeader
+	{mso-style-name:"Table Header";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:18.0pt;
+	margin-left:14.2pt;
+	text-align:center;
+	text-indent:-14.2pt;
+	background:#002D62;
+	font-size:16.0pt;
+	font-family:"Segoe UI",sans-serif;
+	text-transform:uppercase;
+	font-weight:bold;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+p.Figure, li.Figure, div.Figure
+	{mso-style-name:Figure;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:72.0pt;
+	text-align:center;
+	text-indent:-18.0pt;
+	font-size:8.0pt;
+	font-family:"Segoe UI",sans-serif;
+	font-weight:bold;}
+p.Table, li.Table, div.Table
+	{mso-style-name:Table;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:72.0pt;
+	text-align:center;
+	text-indent:-18.0pt;
+	font-size:8.0pt;
+	font-family:"Segoe UI",sans-serif;
+	font-weight:bold;}
+span.CommentTextChar
+	{mso-style-name:"Comment Text Char";
+	mso-style-link:"Comment Text";}
+span.CommentSubjectChar
+	{mso-style-name:"Comment Subject Char";
+	mso-style-link:"Comment Subject";
+	font-weight:bold;}
+p.Reference, li.Reference, div.Reference
+	{mso-style-name:Reference;
+	mso-style-link:"Reference Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	font-style:italic;
+	text-decoration:underline;}
+span.ReferenceChar
+	{mso-style-name:"Reference Char";
+	mso-style-link:Reference;
+	font-family:"Calibri",sans-serif;
+	font-style:italic;
+	text-decoration:underline;}
+span.FootnoteTextChar
+	{mso-style-name:"Footnote Text Char";
+	mso-style-link:"Footnote Text";}
+p.Monospaced, li.Monospaced, div.Monospaced
+	{mso-style-name:Monospaced;
+	mso-style-link:"Monospaced Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	text-align:justify;
+	line-height:115%;
+	font-size:9.5pt;
+	font-family:Consolas;}
+span.MonospacedChar
+	{mso-style-name:"Monospaced Char";
+	mso-style-link:Monospaced;
+	font-family:Consolas;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+p.EntityName, li.EntityName, div.EntityName
+	{mso-style-name:EntityName;
+	mso-style-link:"EntityName Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;
+	text-decoration:underline;}
+span.EntityNameChar
+	{mso-style-name:"EntityName Char";
+	mso-style-link:EntityName;
+	text-decoration:underline;}
+p.ColumnVariableName, li.ColumnVariableName, div.ColumnVariableName
+	{mso-style-name:"Column\/Variable Name";
+	mso-style-link:"Column\/Variable Name Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:Consolas;}
+span.ColumnVariableNameChar
+	{mso-style-name:"Column\/Variable Name Char";
+	mso-style-link:"Column\/Variable Name";
+	font-family:Consolas;}
+p.Type, li.Type, div.Type
+	{mso-style-name:Type;
+	mso-style-link:"Type Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:9.0pt;
+	font-family:Consolas;
+	color:#0034FF;}
+span.TypeChar
+	{mso-style-name:"Type Char";
+	mso-style-link:Type;
+	font-family:Consolas;
+	color:#0034FF;}
+p.OnScreenelement, li.OnScreenelement, div.OnScreenelement
+	{mso-style-name:"On Screen element";
+	mso-style-link:"On Screen element Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;
+	color:white;}
+span.OnScreenelementChar
+	{mso-style-name:"On Screen element Char";
+	mso-style-link:"On Screen element";
+	color:white;}
+p.FieldName, li.FieldName, div.FieldName
+	{mso-style-name:FieldName;
+	mso-style-link:"FieldName Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	text-decoration:underline;}
+span.FieldNameChar
+	{mso-style-name:"FieldName Char";
+	mso-style-link:FieldName;
+	font-family:"Calibri",sans-serif;
+	text-decoration:underline;}
+span.EndnoteTextChar
+	{mso-style-name:"Endnote Text Char";
+	mso-style-link:"Endnote Text";}
+span.glyphicon
+	{mso-style-name:glyphicon;}
+span.Mention1
+	{mso-style-name:Mention1;
+	color:#2B579A;
+	background:#E6E6E6;}
+span.Mention2
+	{mso-style-name:Mention2;
+	color:#2B579A;
+	background:#E6E6E6;}
+span.Mention3
+	{mso-style-name:Mention3;
+	color:#2B579A;
+	background:#E6E6E6;}
+p.Image, li.Image, div.Image
+	{mso-style-name:Image;
+	mso-style-link:"Image Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Segoe UI",sans-serif;}
+span.ImageChar
+	{mso-style-name:"Image Char";
+	mso-style-link:Image;}
+p.hub2, li.hub2, div.hub2
+	{mso-style-name:hub2;
+	mso-style-link:"hub2 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:DaxlinePro-Bold;}
+span.hub2Char
+	{mso-style-name:"hub2 Char";
+	mso-style-link:hub2;
+	font-family:DaxlinePro-Bold;}
+span.Mention4
+	{mso-style-name:Mention4;
+	color:#2B579A;
+	background:#E6E6E6;}
+span.UnresolvedMention1
+	{mso-style-name:"Unresolved Mention1";
+	color:gray;
+	background:#E6E6E6;}
+span.UnresolvedMention2
+	{mso-style-name:"Unresolved Mention2";
+	color:gray;
+	background:#E6E6E6;}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+span.UnresolvedMention3
+	{mso-style-name:"Unresolved Mention3";
+	color:gray;
+	background:#E6E6E6;}
+span.BodyTextChar
+	{mso-style-name:"Body Text Char";
+	mso-style-link:"Body Text";
+	font-family:"Segoe UI",sans-serif;
+	color:black;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:42.55pt 2.0cm 1.0cm 2.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB link=blue vlink="#2DBDB6">
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal'>
+
+<table cellpadding=0 cellspacing=0 align=left>
+ <tr>
+  <td width=0 height=805></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=342 height=93 src="1_08_files/image001.png"
+  alt="GoTechnology®&#13;&#10;hub2 – Patch Notes v1.8&#13;&#10;"></td>
+ </tr>
+</table>
+
+<a name="_Toc494448423"></a><a name="_Toc486318195"></a><a name="_Toc485811591"></a><a
+name="_Toc485810586"></a><a name="_Toc481673834"></a><a name="_Toc481673137"></a><a
+name="_Toc481668975"></a><a name="_Toc481595067"></a><a name="_Toc481593731"></a><a
+name="_Toc481590169"></a><a name="_Toc481569848"></a><a name="_Toc473020538"></a><a
+name="_Toc517953893"><br clear=all style='page-break-before:always'>
+</a><b><span style='font-size:16.0pt;color:white;text-transform:uppercase'>&nbsp;</span></b></p>
+
+<br clear=ALL>
+
+<h1><a name="_Toc517953894">1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>About this Document</a></h1>
+
+<h2><a name="_Toc517953895">1.1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Purpose</a></h2>
+
+<p class=MsoNormal>This document provides a brief overview of the changes made
+between V1.7 and V1.8 of hub2, along with where further details of each change
+can be found within the updated functional specification, in addition to a
+listing of completed bug fixes and known issues.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><a name="_Toc517953898">2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Fixed Issues</a></h1>
+
+<p class=MsoNormal>The following issues have been fixed in version 1.8 of hub2</p>
+
+<table class=MiscTable border=1 cellspacing=0 cellpadding=0 width=669
+ style='width:501.55pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=66 style='width:49.15pt;border:solid #884C91 1.0pt;border-right:
+  none;background:#884C91;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText align=center style='text-align:center'><b><span
+  lang=EN-US style='color:white'>Case</span></b></p>
+  </td>
+  <td width=198 style='width:148.8pt;border-top:solid #884C91 1.0pt;border-left:
+  none;border-bottom:solid #884C91 1.0pt;border-right:none;background:#884C91;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText align=center style='text-align:center'><b><span
+  lang=EN-US style='color:white'>Title [sic]</span></b></p>
+  </td>
+  <td width=405 style='width:303.6pt;border:solid #884C91 1.0pt;border-left:
+  none;background:#884C91;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText align=center style='text-align:center'><b><span
+  lang=EN-US style='color:white'>Details</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=66 valign=top style='width:49.15pt;border:solid black 1.0pt;
+  border-top:none;background:#E1E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-US>45630</span></p>
+  </td>
+  <td width=198 valign=top style='width:148.8pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  background:#E1E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-US>Warning message when report has no data</span></p>
+  </td>
+  <td width=405 valign=top style='width:303.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  background:#E1E7FF;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-US>The behavior around reports which
+  contain no data has been changed. Previously a warning message has been
+  displayed, however user feedback indicates that a blank report is preferable.
+  As such this has been changed as requested.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=66 valign=top style='width:49.15pt;border:solid black 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-US>50207</span></p>
+  </td>
+  <td width=198 valign=top style='width:148.8pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-US>Digital Document - Operation &amp;
+  Operation Type bookmarks are listed under header tab of digital document</span></p>
+  </td>
+  <td width=405 valign=top style='width:303.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=left style='text-align:left'>Operation and Operation
+  Type were not present within hub2. They have now been added and can be
+  populated and utilised on Digital Documents as intended.</p>
+  </td>
+ </tr>
+</table>
+
+<h1 style='margin-left:42.5pt;text-indent:0cm'><a name="_Toc517953900">&nbsp;</a></h1>
+
+<h1>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Known Issues</h1>
+
+<p class=MsoNormal>A full list of <span style='font-family:"Tahoma",sans-serif'>“</span>Known
+Issues<span style='font-family:"Tahoma",sans-serif'>” </span>can be found at <a
+href="https://gotechnology.github.io/">https://gotechnology.github.io/</a> </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<span style='font-size:10.0pt;font-family:"Segoe UI",sans-serif'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal'><a name="_Toc517953901"><b><span
+style='font-size:14.0pt;layout-grid-mode:line'>&nbsp;</span></b></a></p>
+
+<h1>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Features</h1>
+
+<p class=MsoNormal>The following functionality has been added in v1.8:</p>
+
+<p class=MsoNormal>Functional:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Completion Status Notification</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Authorised Person – Signature</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Operations and Operation Types</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Digital Document Footers</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Handovers – Digital Document</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Text Only Tasks on Digital Documents</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Save &amp; Add Another</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Comments Field on MOC</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Increase Character Limit on Comments</p>
+
+<p class=MsoNormal>API:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>API – Versioning</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>API – Attachments</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_Toc521654635">4.1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Completion Status Notification</a></h2>
+
+<p class=MsoNormal><b>For more detail see Section 20.5 of the hub2 Functional
+Specification.</b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=594 height=251 id="Picture 1" src="1_08_files/image002.png"
+alt="Screenshot of the Tag ITR Completion Status Edit Page with Notification Section Highlighted"></p>
+
+<p class=Figure style='margin-left:18.0pt'>Figure 1.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>Screenshot of the Tag ITR Completion Status Edit Page with Notification
+Section Highlighted</p>
+
+<p class=MsoNormal>The Tag ITR Completion Status has been updated to allow you
+to choose who will be notified when the Tag ITR Status is changed to a certain
+status.  The person notified can be any of the available ITR Signoffs or the
+person who is assigned to the Tag ITR.  If the signoff is not allocated to that
+ITR or no one is marked as having signed off the item, then no notification
+will be generated.  Multiple people can be alerted to the same change in
+status.</p>
+
+<p class=MsoNormal>Note the Tag ITR Completion Status are configurable in the
+Reference Table, and the signoffs for Tag ITRs are configurable on a per ITR
+basis.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_Toc521654636">4.2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Authorised Person – Signature</a></h2>
+
+<p class=MsoNormal><b>For more detail see Section 3.1.3.2 and 13.3.2.3 of the
+hub2 Functional Specification.</b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=567 height=99 id="Picture 3" src="1_08_files/image003.png"
+alt="Screenshot of the Signature Section from the Authorised Person View Page"></p>
+
+<p class=Figure style='margin-left:18.0pt'>Figure 2.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>Screenshot of the Signature Section from the Authorised Person View Page</p>
+
+<p class=MsoNormal>The ability to add signatures to an Authorised Person via
+the reference table has been added, this signature will then be automatically
+added to the Digital Documents when generated in PDF Format.</p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt'><span style='font-family:
+"Calibri",sans-serif'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Recommended Dimensions: 390 x 130 or thereabouts (3:1 ratio).</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_Toc521654637">4.3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Operations and Operation Types</a></h2>
+
+<p class=MsoNormal><b>For more detail see Section 21.3.3 for Operations, and
+Section 21.3.3 for Operation Types of the hub2 Functional Specification.</b></p>
+
+<p class=MsoNormal>Reference Tables for Operations and Operation Types have
+been added.  The Operations can be allocated to the existing Tag ITRs on a one
+to one basis, on screen from the Operations Reference Table, or via the
+Operations Import.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_Toc521654638">4.4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Digital Document Footers</a></h2>
+
+<p class=MsoNormal><b>For more detail see Sections: 37.2.4 Footer View and Add
+Edit &amp; 37.4.3 Footer Entity of the hub2 Functional Specification.</b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=574 height=89 id="Picture 6" src="1_08_files/image004.png"
+alt="Screenshot of the Footer Edit Section with the Options shown"></p>
+
+<p class=Figure style='margin-left:18.0pt'>Figure 3.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>Screenshot of the Footer Edit Section with the Options shown</p>
+
+<p class=MsoNormal>The ability to configure the Digital Document Footers has
+been added, this allows on a project by project basis for the Digital Document
+Footers to be changed from several options.</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Page Numbers</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Static Text</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Date Generated</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Revision</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_Toc521654639">4.5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Handovers – Digital Document</a> </h2>
+
+<p class=MsoNormal><b>For more detail see Section 34.3 for Digital Documents,
+Section 38.2.1 for Handover Type and 23.3.1 for Handover of the hub2 Functional
+Specification.</b></p>
+
+<p class=Figure style='margin-left:18.0pt'>Figure 4.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>Screenshot of Handover Type Edit page with Generation Method Highlighted</p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=616 height=188 id="Picture 4" src="1_08_files/image005.png"
+alt="Screenshot of Handover Type Edit page with Generation Method Highlighted"></p>
+
+<p class=Figure style='margin-left:18.0pt'>Figure 5.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>Screenshot of Handover Type Edit page with Generation Method Highlighted</p>
+
+<p class=MsoNormal>It is now possible to configure Handovers to use Digital
+Documents, which allow ‘smart’ PDF generation, ‘in-app’ completion and a
+greater depth of detail to be recorded.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_Toc521654640">4.6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Text Only Tasks on Digital Documents</a></h2>
+
+<p class=MsoNormal><b>For more detail see Section 34.3 for Digital Documents of
+the hub2 Functional Specification.</b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=574 height=186 id="Picture 5" src="1_08_files/image006.png"
+alt="Screenshot of the Digital Document Section with Task 1 being set to Text Only"></p>
+
+<p class=Figure style='margin-left:18.0pt'>Figure 6.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>Screenshot of the Digital Document Section with Task 1 being set to Text
+Only</p>
+
+<p class=MsoNormal>A new “Text Only” task type has been added to Digital
+Documents. These can be placed anywhere in the Task section of the document but
+unlike normal Tasks do not require any user input to complete.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_Toc521654641">4.7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Add on the View Page</a></h2>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=585 height=113 id="Picture 7" src="1_08_files/image007.png"
+alt="Screenshot of the Discipline View Page with the New Discipline Button highlighted"></p>
+
+<p class=Figure style='margin-left:18.0pt'>Figure 7.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span>Screenshot of the Discipline View Page with the New Discipline Button
+highlighted</p>
+
+<p class=MsoNormal>View Pages now feature a “New” button next to the existing
+“Search” button for added convenience.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_Toc521654642">4.8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Comments Field on MOC</a></h2>
+
+<p class=MsoNormal><b>For more detail see Section 26.3.1.2 of the hub2
+Functional Specification.</b></p>
+
+<p class=MsoNormal>A 1,000-character Comments field has been added to the MOC
+Section.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_Toc521654643">4.9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Increase Character Limit on Comments</a></h2>
+
+<p class=MsoNormal>All Comment fields in use in hub2 have had their character
+limit increase to 1,000 characters</p>
+
+<p class=MsoNormal>Comment Fields increased</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Subsystem</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>System</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Tagged Items</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Tag ITR</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Job Card</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>As Built Drawing</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Handover</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Tag PWL</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Punch List Item</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Header Field Result</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_Toc521654644">4.10.<span style='font:7.0pt "Times New Roman"'> </span>API
+– Versioning</a></h2>
+
+<p class=MsoBodyText><a name="_Toc521654645"><span lang=EN-US>From version 1.8
+of hub2 onwards, the hub2 API will be versioned in line with the web
+application.</span></a></p>
+
+<p class=MsoBodyText><span lang=EN-US>Each release of hub2 will have a
+corresponding supported API version released. The API version can be specified
+by passing a value into the 'api-version' header.</span></p>
+
+<p class=MsoBodyText><span lang=EN-US>If no value is supplied, the request will
+be routed to the endpoint which implements the most up to date version .API
+requests will print out a list of supported versions in the response header.</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>4.11.<span style='font:7.0pt "Times New Roman"'> </span>API - Attachments</h2>
+
+<p class=MsoNormal align=left style='text-align:left'><b>For more detail see <br>
+</b><a
+href="https://github.com/qedi-GoTechnology/qedi-GoTechnology.github.io/wiki/Working-with-Attachments"><b>https://github.com/qedi-GoTechnology/qedi-GoTechnology.github.io/wiki/Working-with-Attachments</b></a></p>
+
+<p class=MsoNormal>The hub2 API now allows clients to work with Attachments to
+many entities within hub2 including: Tag ITR, Tag PWL, Drawing, System, Sub
+System, Tag, Cable, Test Pack, Mechanical Joint, Line, and Spool. Attachments
+can be Created, Updated, Read and Deleted, and their file contents can be
+uploaded and downloaded.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

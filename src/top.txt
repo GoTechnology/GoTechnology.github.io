@@ -63,6 +63,11 @@
                             </tr>
                         </thead>
 			<tr>
+                            <td><a href="v/1_26.htm">1.26</a></td>
+                            <td><a href="v/1_26.docx">.docx</a></td>
+                            <td><a href="v/1_26.pdf">.pdf</a></td>
+                        </tr>
+			<tr>
                             <td><a href="v/1_25.htm">1.25</a></td>
                             <td><a href="v/1_25.docx">.docx</a></td>
                             <td><a href="v/1_25.pdf">.pdf</a></td>

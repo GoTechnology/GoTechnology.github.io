@@ -46,6 +46,18 @@
             </h2>
             <hr />
         </div>
+        <div id="UG" class="text-center">
+            <h2>
+                <a href="u/">GoTechnology hub2 User Guide</a>
+            </h2>
+            <hr />
+        </div>
+        <div id="YouTube" class="text-center">
+            <h2>
+                <a href="youtube/">GoTechnology YouTube Channel (Video Tutorials)</a>
+            </h2>
+            <hr />
+        </div>
         <div id="Version" class="text-center">
             <h2 class="text-center">Release Notes</h2>
 	    <small class="text-center">* = Optimisation Release (no new features)</small>

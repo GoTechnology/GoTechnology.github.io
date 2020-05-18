@@ -25,7 +25,7 @@ foreach ($version in $versionInputArray)
 
 
     # it will be empty if it's a maintenance release, so we remove the links and add asterisks
-    if(((Get-ChildItem | Measure-Object).Count -eq 0) -Or (((Get-ChildItem | Measur-Object).Count -eq 1) -And (Test-Path -Path '.gitignore')))
+    if(((Get-ChildItem | Measure-Object).Count -eq 0) -Or (((Get-ChildItem | Measure-Object).Count -eq 1) -And (Test-Path -Path '.gitignore')))
     {
         $Row.Version = $ExecutionContext.InvokeCommand.ExpandString('$version')
         $Row.Docx = $ExecutionContext.InvokeCommand.ExpandString('*')

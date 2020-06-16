@@ -10,12 +10,6 @@
         </div>
     </div>
     <div class="container">
-        <div class="text-center">
-            <h2>
-                <a href="r/">Roadmap</a>
-            </h2>
-            <hr />
-        </div>
         <div id="API" class="text-center">
             <h2>
                 <a href="api/">hub2 API Introductory Wiki</a>

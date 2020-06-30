@@ -1,124 +1,31 @@
-﻿Case,Title,Priority
-64145,Uploading Attachments with incorrect Level C ID,1 – Critical
-66561,Import Performance Testing: Tag Import (Add) 35K and 40K generates  'System.OutOfMemoryException',1 – Critical
-62817,Imports (10 K+ edit) Timeout Issues with 'Out of Memory' error.,1 – Critical
-65967,Level Name bookmarks not populating via API,2 – High
-66194,Remove forced up rev when editing sign offs on an ITR but there is no document yet,2 – High
-61250,Multiple Imports of 100K Records Cause a Loop Around Checking Sign-in Status,2 – High
-65360,Error in Digital Document Preview ,2 – High
-65433,No validation for missing Header Table Bookmark,2 – High
-60302,Zip file downloads flagged as potentially dangerous,2 – High
-66471,Missing validation error for Table type task when existing different type task changed to Table type,2 – High
-61248,Edit Digital Document Sign Off Permissions,2 – High
-63048,Tag ITR System Discipline Summary Report: Ignores System Filter When Presenting Data,2 – High
-66930,"Tag PWL Skyline Chart Filters Return Incorrect Graph on First Load, and Filters Set Further in the Past",3 – Moderate
-66902,"Self Sign Off from Entity Search Page - Authorised Person Can Be Selected From Pop-Up, And Sign Off Completed",3 – Moderate
-65398,API Task Result Image upload allows files over 40MB to be uploaded and non allowed file types validation message wrong.,3 – Moderate
-52913,API - Date format in downloaded Digital Document file,3 – Moderate
-60011,API - Flexible sign off field is duplicated on Punch List item GET/POST requests,3 – Moderate
-48908,DOTX Table Bookmark - Drawings order generated on word doc does not match with tag ITR/tagged item drawing order ,3 – Moderate
-49289,DOTX Table Bookmark - Tag Lines order generated on word doc does not match with Tag Lines order in Hub2,3 – Moderate
-60388,Rev 6 Digital Document Seed - special characters are not added into the database correctly,3 – Moderate
-61369,Onscreen Digital Document has 'Generate PDF' button displayed when user does not have permission to Generate.,3 – Moderate
-66151,Import - Assign Authorised Person with Profession with no Discipline(s) no validation check.,3 – Moderate
-59256,Potentially misleading notifications if emails fail to send during import,3 – Moderate
-60872,Digital Document Task Weighting Duplicate Validation Error Messages ,3 – Moderate
-65371,No API Defined for Procedures,3 – Moderate
-66491,Aliased grouping fields in Summary reports are not picked up by text by group by checkbox,3 – Moderate
-65376,Ambiguous delegates in Reports when building in Team City,3 – Moderate
-51964,Tag Detailed Report - Error occurred when running a report with 100k records  ,3 – Moderate
-61558,Skyline Popup - Punchlists and MOCs tab not displaying any data for DMCC Skyline,3 – Moderate
-64372,Completions Grid: 500 Error on Download from Overall Tab,3 – Moderate
-47954,Attachment - Document Type column is not sorting correctly,3 – Moderate
-65703,Loop Tags Column Bookmarks List contains all the column Bookmarks which Doesn't have any Loop/Loop Elements,3 – Moderate
-66271,'Assign to me' (on Assign panel) is not disabled when Authorised Person is not associated with Hub User,3 – Moderate
-66537,Duplicated Tag PWL validation messages when multiple validation messages,3 – Moderate
-66200,'Assign to Me' no validation if Authorised Person Hub User is different from logged in user or Hub User= None.,3 – Moderate
-51240,Menu's extending off bottom of screen at certain browser magnifications.,3 – Moderate
-61001,hub2 themes appear incorrectly when Adblocker is used,3 – Moderate
-66123,User Account Menu - Display of 'Assigned To Options' when Authorised Person not associated with Hub User,3 – Moderate
-66125,'Assign to me' (on Assign panel) is not disabled when Authorised Person is 'Inactive'. ,3 – Moderate
-45571,Attachment permission at Level C means all child Level Es are visible on select screen.,3 – Moderate
-66917,Validation message is Duplicated When user tries to  sign off the record  using sign off button from search page,3 – Moderate
-61597,"On work pack generation if the digital document result PDF is also added as an attachment, no data is shown on the result file",3 – Moderate
-66075,Enable Preservation: Preservation link seen after DISABLE in Level C - results in infinite loop of the Level selection,4 – Low
-46671,Users unable to create Levels without a currently selected Level E,4 – Low
-53716,Inconsistent filenames via API GET Document endpoints,4 – Low
-65599,Mobile App: (Cross Platform) - no validation for file size attachment 0 bytes,4 – Low
-66426,Error while Task images (added from mobile app) deleted continuously creating abrupt page,4 – Low
-49226,Increase Size of Prefix and Postfix depending on Size,4 – Low
-49963,Digital Document: Spacing format of Header/Header Table misaligned on PWL 'Edit Document' and TagPWL 'Edit Onscreen' (Chrome),4 – Low
-52238,Digital Document 'Delete Image' button in modal window still enabled after final image deleted.,4 – Low
-65542,Custom Fields - duplicate names,4 – Low
-60527,Job Card Custom Fields on Work Pack Completions Grid,4 – Low
-49836,"History - When viewing the history of an item which is aliased, it records the actual name of the field rather than the alias ",4 – Low
-50337,Cannot currently set the Default Order of Child Exports,4 – Low
-51154,Error When Clicking Edit on Tag ITRs,4 – Low
-52108,Missing required sign off fields not coloured red in Import Results,4 – Low
-53105,Import of Custom Fields for Ref Table (in this case Room) formats Room 'Name' as 'General' and not 'Text' ,4 – Low
-59198,Onscreen Notifications appearing multiple times,4 – Low
-61291,Import - Missing Validation error message for Invalid import,4 – Low
-46840,Parent MOC Raised Date Bookmark removed,4 – Low
-54593,Bookmark List for Handovers includes Bookmarks that won't work for Handover Type,4 – Low
-54733,Toast message does not wrap correctly when an entity is saved,4 – Low
-58679,Report columns can be dragged and dropped into invalid areas on the screen,4 – Low
-60809,Same validation message is shown multiple times on screen,4 – Low
-51552,Authorised person - Cannot filter by 'Name' on hub user data pop of authorised persons,4 – Low
-51939,Scheduled Reports - 'Required' field validation is not displayed for 'Report' field on blank report save,4 – Low
-52455,Scheduled Reports: Console Error in IE when 'Adding' a Scheduled Report  (Unexpected end of input. ),4 – Low
-52595,Scheduled Reports - History recorded for Filters and Cron fields are not user friendly,4 – Low
-54647,Renamed or deleted custom fields appear on reports,4 – Low
-54816,Summary Report - 'Model' is displayed as a header under Select Column section on Create/Edit Summary Report page,4 – Low
-55000,"Handover Reports - Based on breakdown type selected, selected columns appears to be un-selected while creating report",4 – Low
-64528,500 Error in Detailed Reports not handled,4 – Low
-50520,Sign Off history - History recorded for sign off fields does not include 'By' and 'Date' for both tag ITR/PLI,4 – Low
-50534,Sign off  - Validation message on Sign off field does not get cleared on save even when there's no data to be validated,4 – Low
-50621,Sign off - Incorrect validation message is displayed on tag ITR/PWL/PLI Sign off panel for a user with self sign off permission,4 – Low
-61801,Formatting of Custom Field bookmark paths in Bookmark List popup,4 – Low
-60514,Authorised Person - New user account is not displayed in the Hub User field,4 – Low
-66932,Date For Sign Off from Search Screen Dialog has Incorrect Date Format,5 – Known Issues
-66933,Default Filters for PWL Look Ahead Detailed Report are Not Set for To Due Date - Leading to a Blank Report,5 – Known Issues
-43903,"Save needs to be clicked twice via automation, admin handovers",5 – Known Issues
-51611,"Admin - If levels are aliased, then the aliased levels are not displayed from Level Select page",5 – Known Issues
-54601,Inconsistency in the Size (bytes) in Attachemnets in Size Coloumn.,5 – Known Issues
-40425,Search Validation,5 – Known Issues
-43235,Digital Certificate Edit OnScreen Fields Have No Max Length Character Error Shown Until After Save,5 – Known Issues
-46138,Should PLI scoped by TagITR be counted in the Certification Grouping Summary Report?,5 – Known Issues
-61575,Barcoding Reading Issue,5 – Known Issues
-61460,Console Error 500 when saving Cloned Digital Document with large number of Table rows.,5 – Known Issues
-65607,Table Bookmarks: Data displayed by generated DOTX is not displayed on separate rows.,5 – Known Issues
-50038,Digital Documents: Validation message for Header Bookmark field only appears once all other fields completed.,5 – Known Issues
-51451,Digital Document PDF upload - Validation of Task 'Signatures'.,5 – Known Issues
-52349,Digital Document Editable Header Label field misaligned on 'Edit Document onscreen'.,5 – Known Issues
-59990,Unable to Delete Level C After Enabling Clean Energy,5 – Known Issues
-60450,History is only recorded on first update of Digital Documents,5 – Known Issues
-48630,Handovers - Bad request error message when user tries to navigate from new level E handover to existing level E handover page,5 – Known Issues
-49965,Handover - On IE Date picker field allows user to select future dates for sign off fields on handovers/tag ITRs,5 – Known Issues
-60387,Operation Import Result (Excel): To Be Updated - Old Values tab displays both Percent Complete and Is Complete fields,5 – Known Issues
-61859,Digital Document - Manual Edit of JSON File Not Validated for Table Column Number,5 – Known Issues
-54380,References to qedi in emails,5 – Known Issues
-66405,Preservation Planned vs Actual 'From Date' filter loads default chart on partial date entry,5 – Known Issues
-46667,Authorised Person - locked user account remains in the Hub User pop-up,5 – Known Issues
-49400,Multiple Tabs - error 400 occurred when attempt to save record after hub2 session expired,5 – Known Issues
-51006,Save needs clicked twice on entities with a Comments field,5 – Known Issues
-51355,Lines - 'Heat Trace' field is missing on Lines AddEdit page,5 – Known Issues
-58664,hub2 Menu bar is not locked at top of the screen when user scrolls down a page (IE),5 – Known Issues
-63600,"Digital Document - IE11 ONLY - ""Unexpected end of input"" error occurred when accessing a Digital Document AddEdit page",5 – Known Issues
-66224,Procedure (Skeleton) Section return to View page from 'Step Search' Page requires extra Back button press,5 – Known Issues
-54229,Procedures - TaggedItem System table bookmark does not exist ,5 – Known Issues
-49440,Authorised persons - Hub user details are not displayed on view when linked with a newly created user ,5 – Known Issues
-48542,Login Dashboard: Skyline Panel (and others) does not rescale size (after zooming page) without a browser refresh,5 – Known Issues
-49168,Completions Grid - MOC Type progress Bar does not always change colour from blue to red on clicking.,5 – Known Issues
-49955,Reporting - Styling issues for few handover types on full page skyline report,5 – Known Issues
-50474,Excel Report required additional steps to view on iOS,5 – Known Issues
-54223,Reports: Save Search validation message character limit (2000) does not match actual characters allowed.,5 – Known Issues
-60916,Completions Grid Level E Handovers are not shown unless they have been viewed first,5 – Known Issues
-46622,Saved Searches (hub2) - Search filters should NOT be case sensitive,5 – Known Issues
-49684,"Search: Comment field with 'comma' in, is not found when using Search",5 – Known Issues
-59205,Search filter behaviour inconsistent - field lengths,5 – Known Issues
-59423,Signalr Error Seen in Console When Refreshing Page,5 – Known Issues
-50371,"Image Upload - Add, then delete, then add the same file will not upload without a page refresh",5 – Known Issues
-45957,Sub System table validation error message is not displayed at the same time as the other required field in Tagged Item Add page,5 – Known Issues
-54654,History - changes with large string without spaces are not wrapped in the History page,5 – Known Issues
-60350,Digital Document Tables generating empty rows,5 – Known Issues
-53271,Work Pack - Disabled authorised person can still assign work pack if it's already assigned ,5 – Known Issues
+﻿"Case","Title","Milestone"
+40425,"Search Validation","Backlog"
+43235,"Digital Certificate Edit OnScreen Fields Have No Max Length Character Error Shown Until After Save","Backlog"
+46138,"Should PLI scoped by TagITR be counted in the Certification Grouping Summary Report?","Backlog"
+46622,"Saved Searches (hub2) - Search filters should NOT be case sensitive","Backlog"
+46667,"Authorised Person - locked user account remains in the Hub User pop-up","Backlog"
+48542,"Login Dashboard: Skyline Panel (and others) does not rescale size (after zooming page) without a browser refresh","Backlog"
+48630,"Handovers - Bad request error message when user tries to navigate from new level E handover to existing level E handover page","Backlog"
+49168,"Completions Grid - MOC Type progress Bar does not always change colour from blue to red on clicking.","Backlog"
+49400,"Multiple Tabs - error 400 occurred when attempt to save record after hub2 session expired","Backlog"
+49440,"Authorised persons - Hub user details are not displayed on view when linked with a newly created user ","Backlog"
+49955,"Reporting - Styling issues for few handover types on full page skyline report","Backlog"
+49963,"Digital Document: Spacing format of Header/Header Table misaligned on PWL 'Edit Document' and TagPWL 'Edit Onscreen' (Chrome)","Backlog"
+49965,"Handover - On IE Date picker field allows user to select future dates for sign off fields on handovers/tag ITRs","Backlog"
+50038,"Digital Documents: Validation message for Header Bookmark field only appears once all other fields completed.","Backlog"
+50371,"Image Upload - Add, then delete, then add the same file will not upload without a page refresh","Backlog"
+50474,"Excel Report required additional steps to view on iOS","Backlog"
+51451,"Digital Document PDF upload - Validation of Task 'Signatures'.","Backlog"
+53271,"Work Pack - Disabled authorised person can still assign work pack if it's already assigned ","Backlog"
+54380,"References to qedi in emails","Backlog"
+54654,"History - changes with large string without spaces are not wrapped in the History page","Backlog"
+55000,"Handover Reports - Based on breakdown type selected, selected columns appears to be un-selected while creating report","Backlog"
+59198,"Onscreen Notifications appearing multiple times","Backlog"
+59990,"Unable to Delete Level C After Enabling Clean Energy","Backlog"
+60450,"History is only recorded on first update of Digital Documents","Backlog"
+60916,"Completions Grid Level E Handovers are not shown unless they have been viewed first","Backlog"
+61575,"Barcoding Reading Issue","Backlog"
+63600,"Digital Document - IE11 ONLY - ""Unexpected end of input"" error occurred when accessing a Digital Document AddEdit page","Backlog"
+66075,"Enable Preservation: Preservation link seen after DISABLE in Level C - results in infinite loop of the Level selection","Backlog"
+66224,"Procedure (Skeleton) Section return to View page from 'Step Search' Page requires extra Back button press","Backlog"
+66405,"Preservation Planned vs Actual 'From Date' filter loads default chart on partial date entry","Backlog"

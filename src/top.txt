@@ -80,6 +80,13 @@
 	    <span>For projects NOT using Digital Documents.</span>
             <hr />
         </div>
+        <div id="spec" class="text-center">
+            <h3>
+                <a href="spec/">GoTechnology hub2 Functional Spec</a>
+            </h3>
+	    <span>Not for the faint of heart: At over 200 pages, this is the most detailed documentation available for GoTechnology hub2.</span>
+            <hr />
+        </div>
         <div id="Version" class="text-center">
             <h2 class="text-center">Release Notes</h2>
 	    <small class="text-center">* = Optimisation Release (no new features)</small>

@@ -87,6 +87,13 @@
 	    <span>Not for the faint of heart: At over 200 pages, this is the most detailed documentation available for GoTechnology hub2.</span>
             <hr />
         </div>
+        <div id="companionapp" class="text-center">
+            <h3>
+                <a href="https://github.com/GoTechnology/GoTechnology.github.io/releases/download/app/com.wcs.hub2DigitalDocuments.apk">GoTechnology hub2 Companion App</a>
+            </h3>
+	    <span>Download the apk file to install.</span>
+            <hr />
+        </div>
         <div id="Version" class="text-center">
             <h2 class="text-center">Release Notes</h2>
 	    <small class="text-center">* = Optimisation Release (no new features)</small>

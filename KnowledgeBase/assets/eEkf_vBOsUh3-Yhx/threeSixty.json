@@ -1,0 +1,54 @@
+{
+  "version": "3.43.22859.0",
+  "scenes": [
+    {
+      "title": "1:2 - Create Tags"
+    }
+  ],
+  "slides": [
+    {
+      "id": "6L0dRK1B2Rp",
+      "title": "Lesson 2 Start",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "5ssSbl2WUmM",
+      "title": "Tagged Items Menu",
+      "scene_index": "1.2"
+    },
+    {
+      "id": "5nIxRUTVJiH",
+      "title": "Tagged Items Menu",
+      "scene_index": "1.3"
+    },
+    {
+      "id": "6QUlQwQtBDm",
+      "title": "Tag Search",
+      "scene_index": "1.4"
+    },
+    {
+      "id": "6WpHKXxnNQc",
+      "title": "Try It - Tag Add",
+      "scene_index": "1.5"
+    },
+    {
+      "id": "6VMarLLQHcc",
+      "title": "Try It - Tag Add",
+      "scene_index": "1.6"
+    },
+    {
+      "id": "6PQtgUOBeuT",
+      "title": "Lesson 2 Complete",
+      "scene_index": "1.7"
+    }
+  ],
+  "player": {
+    "name": "classic",
+    "width": 1008,
+    "height": 712
+  },
+  "stage": {
+    "width": 988,
+    "height": 641
+  }
+}

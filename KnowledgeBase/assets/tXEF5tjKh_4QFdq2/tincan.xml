@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tincan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://projecttincan.com/tincan.xsd">
+	<activities>
+		<activity id="http://61kwnrqIct9_course_id" type="http://adlnet.gov/expapi/activities/course">
+			<name lang="und">Navigation Menu</name>
+			<description lang="und" />
+			<launch lang="und">story.html</launch>
+		</activity>
+		<activity id="http://61kwnrqIct9_course_id/6jWrX0n2Zmw" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Main Menu</name>
+			<description lang="und">Main Menu</description>
+		</activity>
+		<activity id="http://61kwnrqIct9_course_id/6OZOSQkVj7X" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Imports</name>
+			<description lang="und">Imports</description>
+		</activity>
+		<activity id="http://61kwnrqIct9_course_id/6gecLUEPdWV" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Ref tables</name>
+			<description lang="und">Ref tables</description>
+		</activity>
+		<activity id="http://61kwnrqIct9_course_id/6fPZCLrlJxX" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Tagged items</name>
+			<description lang="und">Tagged items</description>
+		</activity>
+		<activity id="http://61kwnrqIct9_course_id/6dFYxd9LEvZ" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Certification</name>
+			<description lang="und">Certification</description>
+		</activity>
+		<activity id="http://61kwnrqIct9_course_id/6AfzwChpcMM" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Punch List</name>
+			<description lang="und">Punch List</description>
+		</activity>
+		<activity id="http://61kwnrqIct9_course_id/6jcNZO9pey8" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Handovers</name>
+			<description lang="und">Handovers</description>
+		</activity>
+		<activity id="http://61kwnrqIct9_course_id/6OUWM1cIK0A" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Procedures</name>
+			<description lang="und">Procedures</description>
+		</activity>
+		<activity id="http://61kwnrqIct9_course_id/5kSHAwpvwu6" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Changes</name>
+			<description lang="und">Changes</description>
+		</activity>
+		<activity id="http://61kwnrqIct9_course_id/6H9iz8r8DOK" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Planning</name>
+			<description lang="und">Planning</description>
+		</activity>
+		<activity id="http://61kwnrqIct9_course_id/5zzyiXKkuqd" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Documents</name>
+			<description lang="und">Documents</description>
+		</activity>
+		<activity id="http://61kwnrqIct9_course_id/6fjlUMXi8oa" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Report</name>
+			<description lang="und">Report</description>
+		</activity>
+		<activity id="http://61kwnrqIct9_course_id/5ucy5AXa0oX" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Admin</name>
+			<description lang="und">Admin</description>
+		</activity>
+	</activities>
+</tincan>

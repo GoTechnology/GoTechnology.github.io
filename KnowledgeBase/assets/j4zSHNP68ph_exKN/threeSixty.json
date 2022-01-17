@@ -1,0 +1,64 @@
+{
+  "version": "3.43.22859.0",
+  "scenes": [
+    {
+      "title": "Lesson 4 - Generate"
+    }
+  ],
+  "slides": [
+    {
+      "id": "6nhOZPUfX72",
+      "title": "Lesson 4 Start",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "5upfGfQylqR",
+      "title": "Drop Down",
+      "scene_index": "1.2"
+    },
+    {
+      "id": "6mm732amWoc",
+      "title": "Drop Down",
+      "scene_index": "1.3"
+    },
+    {
+      "id": "5vHjQMd3Zyv",
+      "title": "Drop Down",
+      "scene_index": "1.4"
+    },
+    {
+      "id": "5yqn3PaTDRx",
+      "title": "Drop Down",
+      "scene_index": "1.5"
+    },
+    {
+      "id": "6g2hN4pA3Em",
+      "title": "Drop Down",
+      "scene_index": "1.6"
+    },
+    {
+      "id": "5zEg1oH3YeG",
+      "title": "Drop Down",
+      "scene_index": "1.7"
+    },
+    {
+      "id": "6GmywOfmBd2",
+      "title": "Drop Down",
+      "scene_index": "1.8"
+    },
+    {
+      "id": "5XWK4SXujkH",
+      "title": "Lesson 4 Complete",
+      "scene_index": "1.9"
+    }
+  ],
+  "player": {
+    "name": "classic",
+    "width": 1008,
+    "height": 712
+  },
+  "stage": {
+    "width": 988,
+    "height": 641
+  }
+}

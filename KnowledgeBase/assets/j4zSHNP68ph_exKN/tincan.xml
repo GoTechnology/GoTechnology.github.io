@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tincan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://projecttincan.com/tincan.xsd">
+	<activities>
+		<activity id="http://5dL65tEMpnF_course_id" type="http://adlnet.gov/expapi/activities/course">
+			<name lang="und">Work Packs</name>
+			<description lang="und" />
+			<launch lang="und">index_lms.html</launch>
+		</activity>
+		<activity id="http://5dL65tEMpnF_course_id/6nhOZPUfX72" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Lesson 4 Start</name>
+			<description lang="und">Lesson 4 Start</description>
+		</activity>
+		<activity id="http://5dL65tEMpnF_course_id/5upfGfQylqR" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Drop Down</name>
+			<description lang="und">Drop Down</description>
+		</activity>
+		<activity id="http://5dL65tEMpnF_course_id/6mm732amWoc" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Drop Down</name>
+			<description lang="und">Drop Down</description>
+		</activity>
+		<activity id="http://5dL65tEMpnF_course_id/5vHjQMd3Zyv" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Drop Down</name>
+			<description lang="und">Drop Down</description>
+		</activity>
+		<activity id="http://5dL65tEMpnF_course_id/5yqn3PaTDRx" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Drop Down</name>
+			<description lang="und">Drop Down</description>
+		</activity>
+		<activity id="http://5dL65tEMpnF_course_id/6g2hN4pA3Em" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Drop Down</name>
+			<description lang="und">Drop Down</description>
+		</activity>
+		<activity id="http://5dL65tEMpnF_course_id/5zEg1oH3YeG" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Drop Down</name>
+			<description lang="und">Drop Down</description>
+		</activity>
+		<activity id="http://5dL65tEMpnF_course_id/6GmywOfmBd2" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Drop Down</name>
+			<description lang="und">Drop Down</description>
+		</activity>
+		<activity id="http://5dL65tEMpnF_course_id/5XWK4SXujkH" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="und">Lesson 4 Complete</name>
+			<description lang="und">Lesson 4 Complete</description>
+		</activity>
+	</activities>
+</tincan>

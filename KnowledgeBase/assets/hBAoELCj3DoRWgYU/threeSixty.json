@@ -1,0 +1,54 @@
+{
+  "version": "3.43.22859.0",
+  "scenes": [
+    {
+      "title": "1:3 - Associate Tags & ITRs"
+    }
+  ],
+  "slides": [
+    {
+      "id": "5gqTFMDBkd3",
+      "title": "Lesson 3 Start",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "6Eth6VgqYO7",
+      "title": "Try It - Tag Add",
+      "scene_index": "1.2"
+    },
+    {
+      "id": "5ksON96smdU",
+      "title": "Try It - Tag Add",
+      "scene_index": "1.3"
+    },
+    {
+      "id": "5ehPj0cAPZE",
+      "title": "Try It - Tag Add",
+      "scene_index": "1.4"
+    },
+    {
+      "id": "5u7jghnHtgA",
+      "title": "Try It - Create Operation",
+      "scene_index": "1.5"
+    },
+    {
+      "id": "62a76xvckfs",
+      "title": "Try It - Create JC",
+      "scene_index": "1.6"
+    },
+    {
+      "id": "64RUU2Xd4X2",
+      "title": "Lesson 3 Complete",
+      "scene_index": "1.7"
+    }
+  ],
+  "player": {
+    "name": "classic",
+    "width": 1008,
+    "height": 712
+  },
+  "stage": {
+    "width": 988,
+    "height": 641
+  }
+}
